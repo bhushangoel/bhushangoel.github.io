@@ -79,11 +79,28 @@
                     {% else %}
                 <li class="nav-item">
                     {% endif %}
-<!--                    <a class="nav-link" href="{{ site.baseurl }}/index.html">Home</a>-->
+                    <!--                    <a class="nav-link" href="{{ site.baseurl }}/index.html">Home</a>-->
                 </li>
 
-                <!--color: #00ab6b;-->
-                    {% if page.url == "/interview-questions" %}
+                {% if page.url == "/" or page.url contains "categories" %}
+                <li class="nav-item dropdown active">
+                    {% else %}
+                <li class="nav-item dropdown">
+                    {% endif %}
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                       aria-haspopup="true" aria-expanded="false">Blogs</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item"
+                           href="{{ site.baseurl }}/index.html">All Blogs</a>
+                        {% for category in site.categories %}
+                        <a class="dropdown-item"
+                           href="{{site.baseurl}}/categories#{{ category[0] | url_escape | strip | replace: ' ', '-' }}">{{
+                            category[0] }} ({{ category[1].size }})</a>
+                        {% endfor %}
+                    </div>
+                </li>
+
+                {% if page.url == "/interview-questions" %}
                 <li class="nav-item active">
                     {% else %}
                 <li class="nav-item">
@@ -91,7 +108,7 @@
                     <a class="nav-link" href="{{ site.baseurl }}/interview-questions">Interview Questions</a>
                 </li>
 
-                    {% if page.url == "/projects" %}
+                {% if page.url == "/projects" %}
                 <li class="nav-item active">
                     {% else %}
                 <li class="nav-item">
@@ -99,32 +116,19 @@
                     <a class="nav-link" href="{{ site.baseurl }}/projects">Project Showcase</a>
                 </li>
 
-                    {% if page.url == "/" or page.url contains "categories" %}
-                <li class="nav-item dropdown active">
-                    {% else %}
-                <li class="nav-item dropdown">
-                    {% endif %}
-                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Blogs</a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item"
-                           href="{{ site.baseurl }}/index.html">All Blogs</a>
-                        {% for category in site.categories %}
-                        <a class="dropdown-item"
-                           href="{{site.baseurl}}/categories#{{ category[0] | url_escape | strip | replace: ' ', '-' }}">{{ category[0] }} ({{ category[1].size }})</a>
-                        {% endfor %}
-                    </div>
-                </li>
 
-                    {% if page.url contains "tags" %}
+                {% if page.url contains "tags" %}
                 <li class="nav-item dropdown active">
                     {% else %}
                 <li class="nav-item dropdown">
                     {% endif %}
-                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">More</a>
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                       aria-haspopup="true" aria-expanded="false">More</a>
                     <div class="dropdown-menu">
                         {% for tag in site.tags %}
                         <a class="dropdown-item"
-                           href="{{site.baseurl}}/tags#{{ tag[0] | url_escape | strip | replace: ' ', '-' }}">{{ tag[0] }} ({{ tag[1].size }})</a>
+                           href="{{site.baseurl}}/tags#{{ tag[0] | url_escape | strip | replace: ' ', '-' }}">{{ tag[0]
+                            }} ({{ tag[1].size }})</a>
                         {% endfor %}
                     </div>
                 </li>
