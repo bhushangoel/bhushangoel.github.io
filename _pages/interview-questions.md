@@ -5,6 +5,26 @@ permalink: /interview-questions
 comments: false
 ---
 <div class="row justify-content-between">
+    <div class="col-md-4">
+        <div class="sticky-top sticky-top-80">
+            <ul class="interview-sticky-menu">
+                <li><a href="#js">Javascript</a></li>
+                <ul class="interview-sticky-menu">
+                    <li><a href="#js-theory">Theory</a></li>
+                    <li><a href="#js-io">Input Output</a></li>
+                </ul>
+                <li><a href="#angularjs">AngularJS</a></li>
+                <ul class="interview-sticky-menu">
+                    <li><a href="#angular-theory">Theory</a></li>
+                    <li><a href="#angular-scenario">Scenario based</a></li>
+                </ul>
+                <li><a href="#html">HTML</a></li>
+                <li><a href="#css">CSS</a></li>
+                <li><a href="#ts">Typescript</a></li>
+                <li><a href="#others">Other links</a></li>
+            </ul>
+        </div>
+    </div>
     <div class="col-md-8 pr-5">
         <h2 id="js">JavaScript</h2>
         <h3 id="js-theory">Theory</h3>
@@ -38,43 +58,22 @@ comments: false
         {% include angular-theory.html %}
         <h3 id="angular-scenario"> Scenario-Based</h3>
         {% include angular-scenario.html %}
-        
+
         <hr>
         <h2 id="html"> HTML</h2>
         {% include html-questions.html %}
-        
+
         <hr>
         <h2 id="css"> CSS</h2>
         {% include css.html %}
         <hr>
         <h2 id="ts"> TypeScript</h2>
         {% include typescript.html %}
-        
+
         <hr>
         <h2 id="others"> Other Reference Links</h2>
         {% include other.html %}
-        
-    </div>
 
-    <div class="col-md-4">
-        <div class="sticky-top sticky-top-80">
-            <ul class="interview-sticky-menu">
-                <li><a href="#js">Javascript</a></li>
-                <ul class="interview-sticky-menu">
-                    <li><a href="#js-theory">Theory</a></li>
-                    <li><a href="#js-io">Input Output</a></li>
-                </ul>
-                <li><a href="#angularjs">AngularJS</a></li>
-                <ul class="interview-sticky-menu">
-                    <li><a href="#angular-theory">Theory</a></li>
-                    <li><a href="#angular-scenario">Scenario based</a></li>
-                </ul>
-                <li><a href="#html">HTML</a></li>
-                <li><a href="#css">CSS</a></li>
-                <li><a href="#ts">Typescript</a></li>
-                <li><a href="#others">Other links</a></li>
-            </ul>
-        </div>
     </div>
 </div>
 

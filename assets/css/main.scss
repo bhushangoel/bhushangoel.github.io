@@ -17,3 +17,19 @@
 .interview-sticky-menu, .interview-sticky-menu>ul {
 	list-style-type: none !important;
 }
+
+a.tags-custom {
+	background: gray;
+	color: white;
+	border-radius: 18px;
+	padding: 5px 10px;
+	margin: 5px;
+}
+
+a.tags-custom:hover {
+	color: whitesmoke;
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+	color: #00ab6b !important;
+}
