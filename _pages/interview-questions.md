@@ -45,39 +45,39 @@ comments: false
         </nav>
         <div class="tab-content" id="nav-tabContent">
             <div class="tab-pane fade show active" id="nav-b" role="tabpanel" aria-labelledby="nav-home-tab">
-                {% include js-beginner.html %}
+                {% include js/js-beginner.html %}
             </div>
             <div class="tab-pane fade" id="nav-i" role="tabpanel" aria-labelledby="nav-profile-tab">
-                {% include js-intermediate.html %}
+                {% include js/js-intermediate.html %}
             </div>
             <div class="tab-pane fade" id="nav-a" role="tabpanel" aria-labelledby="nav-contact-tab">
-                {% include js-advanced.html %}
+                {% include js/js-advanced.html %}
             </div>
         </div>
         <h3 id="js-io"> Input/output </h3>
-        {% include js-io.html %}
+        {% include js/js-io.html %}
         <hr>
 
         <h2 id="angularjs"> Angular JS</h2>
         <h3 id="angular-theory"> Theory-based</h3>
-        {% include angular-theory.html %}
+        {% include angular/angular-theory.html %}
         <h3 id="angular-scenario"> Scenario-Based</h3>
-        {% include angular-scenario.html %}
+        {% include angular/angular-scenario.html %}
 
         <hr>
         <h2 id="html"> HTML</h2>
-        {% include html-questions.html %}
+        {% include html/html-questions.html %}
 
         <hr>
         <h2 id="css"> CSS</h2>
-        {% include css.html %}
+        {% include css/css.html %}
         <hr>
         <h2 id="ts"> TypeScript</h2>
-        {% include typescript.html %}
+        {% include ts/typescript.html %}
 
         <hr>
         <h2 id="others"> Other Reference Links</h2>
-        {% include other.html %}
+        {% include others/other.html %}
 
     </div>
 </div>
