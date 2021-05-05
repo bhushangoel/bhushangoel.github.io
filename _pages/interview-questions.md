@@ -18,6 +18,11 @@ comments: false
                     <li><a href="#angular-theory">Theory</a></li>
                     <li><a href="#angular-scenario">Scenario based</a></li>
                 </ul>
+                <li><a href="#angularjs">Libraries</a></li>
+                <ul class="interview-sticky-menu">
+                    <li><a href="#angular-theory">RxJS</a></li>
+                    <li><a href="#angular-scenario">ngRx</a></li>
+                </ul>
                 <li><a href="#html">HTML</a></li>
                 <li><a href="#css">CSS</a></li>
                 <li><a href="#ts">Typescript</a></li>
