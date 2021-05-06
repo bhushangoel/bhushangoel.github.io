@@ -3,10 +3,17 @@ Template Name: Mediumish
 Copyright: Sal, WowThemes.net, https://www.wowthemes.net 
 License: https://www.wowthemes.net/freebies-license/ 
 */
-@media screen and (min-width:1500px) {
-    html { font-size:18px; } /* Increase the font size on higher resolutions */
-    .container {max-width:80%;}
+@media screen and (min-width: 1500px) {
+    html {
+        font-size: 18px;
+    }
+
+    /* Increase the font size on higher resolutions */
+    .container {
+        max-width: 80%;
+    }
 }
+
 .mainheading {
     padding: 1rem 0rem;
 }
@@ -89,7 +96,7 @@ section.recent-posts {
     margin-bottom: 0rem;
 }
 
-@media (min-width:576px) {
+@media (min-width: 576px) {
     .card-columns.listfeaturedtag {
         -webkit-column-count: 2;
         -moz-column-count: 2;
@@ -97,7 +104,7 @@ section.recent-posts {
     }
 }
 
-@media (min-width:992px) {
+@media (min-width: 992px) {
     .navbar-expand-lg .navbar-nav .nav-link {
         padding-right: 0.8rem;
         padding-left: 0.8rem;
@@ -162,7 +169,7 @@ section.recent-posts {
     max-height: 100%;
 }
 
-@media (max-width:991px) {
+@media (max-width: 991px) {
     .featured-box-img-cover {
         height: auto;
         width: 100%;
@@ -389,13 +396,13 @@ blockquote {
     top: 100px;
 }
 
-@media (min-width:1024px) {
+@media (min-width: 1024px) {
     .share ul li {
         display: block;
     }
 }
 
-@media (max-width:999px) {
+@media (max-width: 999px) {
     .featured-box-img-cover {
         height: 359px;
     }
@@ -460,13 +467,13 @@ blockquote {
     }
 }
 
-@media (max-width:1024px) {
+@media (max-width: 1024px) {
     .post-top-meta .col-md-10 {
         text-align: center;
     }
 }
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
     .post-top-meta.authorpage {
         text-align: center;
     }
@@ -767,7 +774,7 @@ iframe {
     color: #fff;
 }
 
-@media (min-width:768px) {
+@media (min-width: 768px) {
     .jumbotron.fortags {
         margin-bottom: -50px;
         margin-top: 3rem;
@@ -850,6 +857,23 @@ iframe {
 
 .sticky-top-80 {
     top: 80px;
+}
+
+.fix-ht {
+    height: 325px;
+    overflow-y: scroll;
+}
+
+.side-menu::-webkit-scrollbar {
+    width: 7px;
+}
+
+.side-menu::-webkit-scrollbar-track {
+    box-shadow: inset 0px 7px 17px rgb(0 0 0 / 15%);
+}
+
+.side-menu::-webkit-scrollbar-thumb {
+    background-color: #20b57e;
 }
 
 .spoiler {
