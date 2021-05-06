@@ -1,0 +1,72 @@
+<div class="row justify-content-between">
+    <div class="col-md-4">
+        <div class="sticky-top sticky-top-80">
+            <ul class="interview-sticky-menu">
+                <li><a href="#js">Javascript</a></li>
+                <ul class="interview-sticky-menu">
+                    <li><a href="#js-theory">Theory</a></li>
+                    <li><a href="#js-io">Input Output</a></li>
+                </ul>
+                <li><a href="#angularjs">AngularJS</a></li>
+                <ul class="interview-sticky-menu">
+                    <li><a href="#angular-theory">Theory</a></li>
+                    <li><a href="#angular-scenario">Scenario based</a></li>
+                </ul>
+                <li><a href="#html">HTML</a></li>
+                <li><a href="#css">CSS</a></li>
+                <li><a href="#ts">Typescript</a></li>
+                <li><a href="#others">Other links</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-md-8 pr-5">
+        <h2 id="js">JavaScript</h2>
+        <h3 id="js-theory">Theory</h3>
+        <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-b" role="tab"
+                   aria-controls="nav-b" aria-selected="true">Beginner</a>
+                <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-i" role="tab"
+                   aria-controls="nav-i" aria-selected="false">Intermediate</a>
+                <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-a" role="tab"
+                   aria-controls="nav-a" aria-selected="false">Advanced</a>
+            </div>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-b" role="tabpanel" aria-labelledby="nav-home-tab">
+                {% include js-beginner.html %}
+            </div>
+            <div class="tab-pane fade" id="nav-i" role="tabpanel" aria-labelledby="nav-profile-tab">
+                {% include js-intermediate.html %}
+            </div>
+            <div class="tab-pane fade" id="nav-a" role="tabpanel" aria-labelledby="nav-contact-tab">
+                {% include js-advanced.html %}
+            </div>
+        </div>
+        <h3 id="js-io"> Input/output </h3>
+        {% include js-io.html %}
+        <hr>
+
+        <h2 id="angularjs"> Angular JS</h2>
+        <h3 id="angular-theory"> Theory-based</h3>
+        {% include angular-theory.html %}
+        <h3 id="angular-scenario"> Scenario-Based</h3>
+        {% include angular-scenario.html %}
+
+        <hr>
+        <h2 id="html"> HTML</h2>
+        {% include html-questions.html %}
+
+        <hr>
+        <h2 id="css"> CSS</h2>
+        {% include css.html %}
+        <hr>
+        <h2 id="ts"> TypeScript</h2>
+        {% include typescript.html %}
+
+        <hr>
+        <h2 id="others"> Other Reference Links</h2>
+        {% include other.html %}
+
+    </div>
+</div>

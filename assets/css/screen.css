@@ -864,21 +864,16 @@ iframe {
     overflow-y: scroll;
 }
 
-.side-menu::-webkit-scrollbar, .contribute::-webkit-scrollbar {
+.side-menu::-webkit-scrollbar {
     width: 7px;
 }
 
-.side-menu::-webkit-scrollbar-track, .contribute::-webkit-scrollbar-track {
+.side-menu::-webkit-scrollbar-track {
     box-shadow: inset 0px 7px 17px rgb(0 0 0 / 15%);
 }
 
-.side-menu::-webkit-scrollbar-thumb, .contribute::-webkit-scrollbar-thumb {
+.side-menu::-webkit-scrollbar-thumb {
     background-color: #20b57e;
-}
-
-.contribute {
-    width: 100%;
-    border: none;
 }
 
 .spoiler {
