@@ -92,7 +92,7 @@ section.recent-posts {
 
 .article-post ol ol,
 .article-post ul ul {
-    list-style: disc;
+    list-style: none;
     margin-bottom: 0rem;
 }
 
@@ -218,6 +218,8 @@ section.recent-posts {
 .toc ul {
     list-style: decimal;
     font-weight: 400;
+    font-size: 17px;
+    list-style: none;
 }
 
 .author-meta {
@@ -860,7 +862,7 @@ iframe {
 }
 
 .fix-ht {
-    height: 325px;
+    height: 500px;
     overflow-y: scroll;
 }
 
