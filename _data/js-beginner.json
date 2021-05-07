@@ -14,6 +14,10 @@
         "title": "Different ways to create an object in JavaScript"
     },
     {
+        "title": "What do you mean by first class objects?",
+        "link": "first-class-objects"
+    },
+    {
         "title": "Function expression vs Function declaration"
     },
     {
