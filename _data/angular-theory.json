@@ -1,0 +1,73 @@
+[
+    {
+        "title":"Components vs Directives"
+    },
+    {
+        "title":"<code>componentFactoryResolver</code>"
+    },
+    {
+        "title":"Decorator design pattern"
+    },
+    {
+        "title":"What are the modules, component and service?",
+        "children": [
+            {
+                "title": "How many types of modules are there?"
+            },
+            {
+                "title": "Can you add multiple modules in a single angular application?"
+            }
+        ]
+    },
+    {
+        "title":"How to detect changes in the input property passed from parent to child component?"
+    },
+    {
+        "title":"How to pass data from child to parent component?"
+    },
+    {
+        "title":"Lifecycle methods in angular"
+    },
+    {
+        "title":"Observables vs Promises in angular"
+    },
+    {
+        "title":"Data sharing between parent to child using - <br> <code>@Input</code>"
+    },
+    {
+        "title":"Data sharing between child to parent using - <br> <code>@ViewChild, @Output and Event-emitter</code>"
+    },
+    {
+        "title":"AOT vs JIT, which one is better"
+    },
+    {
+        "title":"Dependency injection"
+    },
+    {
+        "title":"How would you create a filter using angular?"
+    },
+    {
+        "title":"<code>Constructor</code> vs <code>ngOnInit</code>"
+    },
+    {
+        "title":"What are different change detection strategies available and how to forcefully detect changes?"
+    },
+    {
+        "title":"DOM Sanitization"
+    },
+    {
+        "title":"Security Practices in angular"
+    },
+    {
+        "title":"View Encapsulation"
+    },
+    {
+        "title":"IVY"
+    },
+    {
+        "title":"Route guards"
+    },
+    {
+        "title":"What is the default loading strategy in angular - eager or lazy?"
+    }
+]

@@ -1,0 +1,68 @@
+[
+        {
+                "title": "How to align a div vertically and horizontally centered?",
+                "children": [
+                        {
+                                "title": "With fixed dimension",
+                                "link": "center-aligned-div/"
+                        },
+                        {
+                                "title": "With variable dimension",
+                                "link": "center-aligned-div/"
+                        },
+                        {
+                                "title": "Using a flex-box"
+                        }
+                ]
+        },
+        {
+                "title": "What is a box model in CSS?"
+        },
+        {
+                "title": "Pseudo classes <code>(:hover, :active)</code> vs pseudo elements <code>(:after, :before)</code>"
+        },
+        {
+                "title": "Explain different types of positions in CSS <br> <code>fixed, relative, absolute, static, sticky</code>"
+        },
+        {
+                "title": "Explain the following CSS selectors<br><pre>div, p<br>div p<br>div > p<br>div + p<br>div ~ p</pre>"
+        },
+        {
+                "title":"What are CSS media queries and what are they used for?"
+        },
+        {
+                "title":"Bootstrap"
+        },
+        {
+                "title": "CSS Pre-processors"
+        },
+        {
+                "title": "Flexbox in CSS",
+                "link": "flex-box/",
+                "youtube": ""
+        },
+        {
+                "title":"<code>box-shadow</code>"
+        },
+        {
+                "title":"<code>box-sizing</code>"
+        },
+        {
+                "title":"Display properties - none, block, inline, inline-block"
+        },
+        {
+                "title":"vm, em, rem, vh, vw font-size properties"
+        },
+        {
+                "title":"CSS Animations"
+        },
+        {
+                "title":"What is a <code>float</code> property in CSS? How do the other elements surrounding it work? Why is the <code>clear</code> property required?"
+        },
+        {
+                "title":"How would you align an image to a circular div, just like on Instagram?"
+        },
+        {
+                "title":"How would you write a code to freeze the top row and column of a table?"
+        }
+]

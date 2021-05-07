@@ -1,0 +1,51 @@
+[
+    {
+        "title": "What is a Closure?",
+        "link": "closures/"
+    },
+    {
+        "title": "Object.create",
+        "link": "object-create/"
+    },
+    {
+        "title": "Prototypes"
+    },
+    {
+        "title": "Different ways to create an object in JavaScript"
+    },
+    {
+        "title": "Function expression vs Function declaration"
+    },
+    {
+        "title": "Significance of <code>use strict</code>"
+    },
+    {
+        "title": "<code>null</code> vs <code>undefined</code> with explanation"
+    },
+    {
+        "title": "Number of ways to delete an element from an array"
+    },
+    {
+        "title": "A deep copy of an object"
+    },
+    {
+        "title": "Storage in a browser: Local Storage vs session Storage"
+    },
+    {
+        "title": "What is an event?",
+        "children": [
+            {
+                "title": "How does event propagation take place?"
+            },
+            {
+                "title": "<code>stopPropagation</code> vs <code>stopImmediatePropagation</code>"
+            }
+        ]
+    },
+    {
+        "title": "<code>for of</code> vs <code>for in</code>"
+    },
+    {
+        "title": "How can you implement Inheritance, Encapsulation and Abstraction in JS?"
+    }
+]

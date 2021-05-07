@@ -925,3 +925,38 @@ iframe {
     opacity: 0;
     transition: opacity .25s;
 }
+
+.badge {
+    color: white;
+    margin: 0 5px;
+    display: inline-block;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25rem;
+}
+
+.badge:hover {
+    color: white;
+}
+
+.bg-primary-site {
+    background: #00ab6b;
+}
+
+.bg-primary-site:hover {
+    background: #047f51;
+}
+
+.interview-list {
+    cursor: default;
+}
+
+.interview-list:hover {
+    background-color: #8080801c;
+}

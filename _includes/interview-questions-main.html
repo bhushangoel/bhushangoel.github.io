@@ -1,0 +1,40 @@
+<ol>
+    {% for data in {{include.content}} %}
+    <li class="interview-list">
+        <div class="row">
+            <span class="col-8">{{ data.title }}</span>
+            {% if data.link or data.youtube %}
+            <span class="col-4">
+                {% if data.link %}
+                <a class="badge bg-primary-site rounded-pill" href="{{data.link}}" target="_blank">Read</a>
+                {% endif %}
+                {% if data.youtube %}
+                <a class="badge bg-danger rounded-pill" href="{{data.youtube}}" target="_blank">Watch on youtube</a>
+                {% endif %}
+            </span>
+            {% endif %}
+            {% if data.children %}
+            <ul>
+                {% for child in data.children %}
+                <li>
+                    <div class="row">
+                        <span class="col-8">{{ child.title }}</span>
+                        {% if child.link or child.youtube %}
+                        <span class="col-4">
+                            {% if child.link %}
+                            <a class="badge bg-primary-site rounded-pill" href="{{child.link}}" target="_blank">Read</a>
+                            {% endif %}
+                            {% if child.youtube %}
+                            <a class="badge bg-danger rounded-pill" href="{{child.youtube}}" target="_blank">Watch on youtube</a>
+                            {% endif %}
+                        </span>
+                        {% endif %}
+                    </div>
+                </li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+        </div>
+    </li>
+    {% endfor %}
+</ol>

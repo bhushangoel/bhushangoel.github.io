@@ -1,0 +1,30 @@
+[
+    {
+        "title": "Advance JS ($)",
+        "link": "https://www.pluralsight.com/courses/advanced-javascript"
+    },
+    {
+        "title": "DailyJS",
+        "link": "https://medium.com/dailyjs"
+    },
+    {
+        "title": "JS interview questions",
+        "link": "https://www.toptal.com/javascript"
+    },
+    {
+        "title": "AngularJS interview questions",
+        "link": "https://www.toptal.com/angular-js/interview-questions"
+    },
+    {
+        "title": "ParseInt mystery",
+        "link": "https://medium.com/dailyjs/parseint-mystery-7c4368ef7b21"
+    },
+    {
+        "title": "isArray",
+        "link": "https://medium.com/dailyjs/parseint-mystery-7c4368ef7b21"
+    },
+    {
+        "title": "HTTP Concept",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/HTTP"
+    }
+]
