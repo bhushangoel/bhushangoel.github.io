@@ -38,8 +38,7 @@
         },
         {
                 "title": "Flexbox in CSS",
-                "link": "flex-box/",
-                "youtube": ""
+                "link": "flex-box/"
         },
         {
                 "title":"<code>box-shadow</code>"
