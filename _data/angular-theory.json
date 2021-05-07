@@ -47,6 +47,9 @@
         "title":"How would you create a filter using angular?"
     },
     {
+        "title":"On which life cycle hook component/framework is already created?"
+    },
+    {
         "title":"<code>Constructor</code> vs <code>ngOnInit</code>"
     },
     {
