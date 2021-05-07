@@ -961,6 +961,6 @@ iframe {
     background-color: #8080801c;
 }
 
-img {
+img[src*="#post-img"] {
     box-shadow: 5px 5px 10px;
 }
