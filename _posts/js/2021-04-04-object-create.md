@@ -10,8 +10,12 @@ comments: false
 image: assets/images/js.png
 ---
 
+`Object.create()` is one of the 4 techniques to create a new object in JS.
 
-`Object.create()` is a way to create a new object. It uses an existing object as the prototype of the newly created object.
+> It creates a **new object** by copying an **existing object** into the **prototype of a new object**.
+
+This is the main concept of `Object.create()`. If you remember this line then you will be able to answer any question related to this concept.
+
 
 ## Example
 
@@ -29,3 +33,8 @@ console.log(bmw);   //   {}
 
 The newly create object will inherit all the prototype object properties. In this case - `bmw` is a `newly created object`, and it inherits all the `prototype object properties of car`.
 
+## Uses
+`Object.create()` is mainly used to achieve classical inheritance.
+
+## Interview questions
+[Object.create() - Input/Ouput](https://crackingthefrontendinterview.com/io-5/)
