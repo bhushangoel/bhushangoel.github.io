@@ -5,7 +5,8 @@
     },
     {
         "title": "Object.create",
-        "link": "object-create/"
+        "link": "object-create/",
+        "youtube": "https://youtu.be/l8H8A2HlnsQ"
     },
     {
         "title": "Prototypes"
