@@ -72,4 +72,4 @@ Whatever we can do with `objects`, we can do with `functions` as well. Functions
 > Functions can be called or invoked in order to perform an action.
 
 ### Interview questions
-* What do you mean by first class objects in JavaScript?
+##### Q1. What do you mean by first class objects in JavaScript?

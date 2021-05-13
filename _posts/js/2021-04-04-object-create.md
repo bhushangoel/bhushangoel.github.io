@@ -37,4 +37,8 @@ The newly create object will inherit all the prototype object properties. In thi
 `Object.create()` is mainly used to achieve classical inheritance.
 
 ## Interview questions
-[Object.create() - Input/Ouput](https://crackingthefrontendinterview.com/io-5/)
+* [Object.create() - Input/Ouput](https://crackingthefrontendinterview.com/io-5/)
+* What is the difference between `Object.create()` and `new` keyword?
+  > Ans: It creates a **new object** by copying an **existing object** into the **prototype of a new object**.
+* How `Object.create()` is different from other object creation methods?
+  > Ans:  It creates a **new object** by copying an **existing object** into the **prototype of a new object**.
