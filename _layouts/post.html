@@ -13,7 +13,7 @@ post_class: post-template
         <!-- Post Share -->
         <!-- Toc if any -->
         {% if page.toc %}
-        <div class="col-md-4 pl-0">
+        <div class="col-md-3 pl-0">
             <div class="article-post sticky-top sticky-top-80 side-menu fix-ht">
 
                 <div class="toc mt-4 mb-4 lead">
@@ -31,11 +31,7 @@ post_class: post-template
 
         <!-- Post -->
         {% assign author = site.authors[page.author] %}
-        {% if page.toc %}
-        <div class="col-md-8 flex-first flex-md-unordered">
-        {% else %}
         <div class="col-md-9 flex-first flex-md-unordered">
-        {% endif %}
             <div class="mainheading">
                 <!-- Author Box -->
                 <!--{% if page.author %}

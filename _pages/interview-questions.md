@@ -8,25 +8,20 @@ comments: false
     <div class="col-md-4">
         <div class="side-menu sticky-top sticky-top-80 fix-ht">
             <ul class="interview-sticky-menu">
-                <li><a href="#js">Javascript</a></li>
+                {% for data in site.data.interview-question-list %}
+                <li>
+                    <a href="{{data.link}}">{{data.title}}</a>
+                   {% assign url = window.location %}
+                   {{page.location}}
+                </li>
+                {% if data.children %}
                 <ul class="interview-sticky-menu">
-                    <li><a href="#js-theory">Theory</a></li>
-                    <li><a href="#js-io">Input Output</a></li>
+                    {% for child in data.children %}
+                    <li><a href="{{child.link}}">{{ child.title }}</a></li>
+                    {% endfor %}
                 </ul>
-                <li><a href="#angularjs">AngularJS</a></li>
-                <ul class="interview-sticky-menu">
-                    <li><a href="#angular-theory">Theory</a></li>
-                    <li><a href="#angular-scenario">Scenario based</a></li>
-                </ul>
-                <!--<li><a href="#angularjs">Libraries</a></li>
-                <ul class="interview-sticky-menu">
-                    <li><a href="#angular-theory">RxJS</a></li>
-                    <li><a href="#angular-scenario">ngRx</a></li>
-                </ul>-->
-                <li><a href="#html">HTML</a></li>
-                <li><a href="#css">CSS</a></li>
-                <li><a href="#ts">Typescript</a></li>
-                <li><a href="#others">Other links</a></li>
+                {% endif %}
+                {% endfor %}
             </ul>
         </div>
     </div>

@@ -1,0 +1,46 @@
+[
+    {
+        "title": "JavaScript",
+        "link": "#js",
+        "children": [
+            {
+                "title": "Theory",
+                "link": "#js-theory"
+            },
+            {
+                "title": "Input/Output",
+                "link": "#js-io"
+            }
+        ]
+    },
+    {
+        "title": "Angular",
+        "link": "#angularjs",
+        "children": [
+            {
+                "title": "Theory",
+                "link": "#angularjs"
+            },
+            {
+                "title": "Scenario based",
+                "link": "#angular-scenario"
+            }
+        ]
+    },
+    {
+        "title": "HTML",
+        "link": "#html"
+    },
+    {
+        "title": "CSS",
+        "link": "#css"
+    },
+    {
+        "title": "TypeScript",
+        "link": "#ts"
+    },
+    {
+        "title": "Others",
+        "link": "#others"
+    }
+]
