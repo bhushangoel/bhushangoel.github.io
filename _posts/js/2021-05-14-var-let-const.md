@@ -20,9 +20,9 @@ A lot of new concepts were introduced in `ES6`. One of them is `let` and `const`
 
 To answer this question, we need to look at the following aspects for all 3 of them --
 
-- scope
-- How to use?
-- Hoisting
+- Scope: Scope is mainly of two types — function scope and block scope.
+- Behaviour: Redeclaration and Updation 
+- Hoisting: It is a concept which allow you to use the variable early and declare it at a later stage.
 
 
 ## `var`
@@ -57,7 +57,7 @@ inside the scope of a function in which it is declared
 */
 ```
 
-### How to use?
+### Behaviour
 `var` can be redeclared and update. It mainly leads to confusion and causes an error in the application. That is why new methods to declare a variable were introduced in ES6.
 
 **example:**
@@ -106,7 +106,7 @@ function solve() {
 }
 ```
 
-### How to use?
+### Behaviour
 It can be updated but can not be redeclared.
 
 **example:**
@@ -155,7 +155,7 @@ function solve() {
 }
 ```
 
-### How to use?
+### Behaviour
 It **can not** be either updated or redeclared.
 
 **example:**
@@ -219,7 +219,7 @@ if (true) {
     <th class="tg-fymr"></th>
     <th class="tg-fymr"><span style="font-weight:bold">Description</span></th>
     <th class="tg-fymr"><span style="font-weight:bold">Scope</span></th>
-    <th class="tg-fymr">How to use?</th>
+    <th class="tg-fymr">Behaviour</th>
     <th class="tg-fymr">Hoisting</th>
   </tr>
 </thead>
