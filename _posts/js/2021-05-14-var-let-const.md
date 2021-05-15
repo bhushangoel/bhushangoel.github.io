@@ -169,7 +169,7 @@ const myName = "foo";
 myName = "bar";
 
 ```
-![const with primitives](https://raw.githubusercontent.com/bhushangoel/ctfi-cdn/master/855AE200-5F32-4C93-8067-70D5FA1E2FB3.jpeg#post-img)
+![const with primitives](https://raw.githubusercontent.com/bhushangoel/ctfi-cdn/master/const-primitive.jpg#post-img)
 
 But there is a caveat here. If you declare an `object` using `const`, it can be updated.
 
@@ -186,7 +186,7 @@ console.log(obj);   // { a: 6 }
 
 This is because in the case of object update, the object's memory reference does not change, and `const` only throws an error if the reference changes.
 
-![const with objects](https://raw.githubusercontent.com/bhushangoel/ctfi-cdn/master/0F1624FA-099C-4B69-869D-D10E5AE1E606.jpeg#post-img)
+![const with objects](https://raw.githubusercontent.com/bhushangoel/ctfi-cdn/master/const-object.jpg#post-img)
 
 ### Hoisting
 Hoisting also works with `const`, it also get **hoisted to the top** of its `scope` but in this instead of getting `undefined`, you will get a `reference error`.
