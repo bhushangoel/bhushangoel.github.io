@@ -42,3 +42,5 @@ The newly create object will inherit all the prototype object properties. In thi
   > Ans: It creates a **new object** by copying an **existing object** into the **prototype of a new object**.
 * How `Object.create()` is different from other object creation methods?
   > Ans:  It creates a **new object** by copying an **existing object** into the **prototype of a new object**.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/l8H8A2HlnsQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
