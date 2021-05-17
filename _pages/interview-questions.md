@@ -52,28 +52,23 @@ comments: false
         <h3 id="js-io"> Input/output </h3>
         {% include js/js-io.html %}
         <hr>
-
         <h2 id="angularjs"> Angular JS</h2>
         <h3 id="angular-theory"> Theory-based</h3>
         {% include angular/angular-theory.html %}
         <h3 id="angular-scenario"> Scenario-Based</h3>
         {% include angular/angular-scenario.html %}
-
         <hr>
         <h2 id="html"> HTML</h2>
         {% include html/html-questions.html %}
-
         <hr>
         <h2 id="css"> CSS</h2>
         {% include css/css.html %}
         <hr>
         <h2 id="ts"> TypeScript</h2>
         {% include ts/typescript.html %}
-
         <hr>
         <h2 id="others"> Other Reference Links</h2>
         {% include others/other.html %}
-
     </div>
 </div>
 

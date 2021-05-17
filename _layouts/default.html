@@ -114,7 +114,11 @@
                 </li>
 
 
-                {% if page.url contains "tags" %}
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.youtube.com/channel/UCTP8RroItEXLYJdCbzE7UOw" target="_blank">Watch on youtube</a>
+                </li>
+
+                {% if page.url == "/other-reference-links" %}
                 <li class="nav-item dropdown active">
                     {% else %}
                 <li class="nav-item dropdown">
@@ -122,17 +126,12 @@
                     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
                        aria-haspopup="true" aria-expanded="false">More</a>
                     <div class="dropdown-menu">
-                        {% for tag in site.tags %}
+                        <a class="dropdown-item" href="other-reference-links/">Other reference links</a>
                         <a class="dropdown-item"
-                           href="{{site.baseurl}}/tags#{{ tag[0] | url_escape | strip | replace: ' ', '-' }}">{{ tag[0]
-                            }} ({{ tag[1].size }})</a>
-                        {% endfor %}
+                           href="https://join.slack.com/t/crackingthefr-a7q3001/shared_invite/zt-q1w81ehe-B9edtZmVbXI_k2QBW1Ki6A" target="_blank">Join Slack</a>
                     </div>
                 </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="https://join.slack.com/t/crackingthefr-a7q3001/shared_invite/zt-q1w81ehe-B9edtZmVbXI_k2QBW1Ki6A" target="_blank">Join Slack</a>
-                </li>
 
                 {% include search-lunr.html %}
 
@@ -194,27 +193,27 @@
         <div class="d-md-flex h-100">
             <div class="col-md-4 transpdark align-self-center text-center h-100">
                 <div class="d-md-flex align-items-center justify-content-center h-100">
-                    <h2 class="d-md-block align-self-center py-1 font-weight-light">Categories <span
+                    <h2 class="d-md-block align-self-center py-1 font-weight-light">Tags <span
                             class="d-none d-md-inline">→</span></h2>
                 </div>
             </div>
 
             <div class="col-md-8 p-5 align-self-center text-center">
-                {% assign categories_list = site.categories %}
-                {% if categories_list.first[0] == null %}
-                {% for category in categories_list %}
+                {% assign tags_list = site.tags %}
+                {% if tags_list.first[0] == null %}
+                {% for tag in tags_list %}
                 <a class="mt-1 mb-1"
-                   href="{{site.baseurl}}/categories#{{ category | url_escape | strip | replace: ' ', '-' }}">{{
-                    category | camelcase }} ({{ site.tags[category].size }})</a>
+                   href="{{site.baseurl}}/categories#{{ tag | url_escape | strip | replace: ' ', '-' }}">{{
+                    tag | camelcase }} ({{ site.tags[tag].size }})</a>
                 {% endfor %}
                 {% else %}
-                {% for category in categories_list %}
+                {% for tag in tags_list %}
                 <a class="mt-1 mb-1"
-                   href="{{site.baseurl}}/categories#{{ category[0] | url_escape | strip | replace: ' ', '-' }}">{{
-                    category[0] | camelcase }} ({{ category[1].size }})</a>
+                   href="{{site.baseurl}}/categories#{{ tag[0] | url_escape | strip | replace: ' ', '-' }}">{{
+                    tag[0] | camelcase }} ({{ tag[1].size }})</a>
                 {% endfor %}
                 {% endif %}
-                {% assign categories_list = nil %}
+                {% assign tags_list = nil %}
             </div>
         </div>
     </div>
