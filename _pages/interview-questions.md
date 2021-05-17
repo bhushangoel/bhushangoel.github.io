@@ -67,8 +67,6 @@ comments: false
         <h2 id="ts"> TypeScript</h2>
         {% include ts/typescript.html %}
         <hr>
-        <h2 id="others"> Other Reference Links</h2>
-        {% include others/other.html %}
     </div>
 </div>
 
