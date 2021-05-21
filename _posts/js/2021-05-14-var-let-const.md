@@ -20,9 +20,9 @@ A lot of new concepts were introduced in `ES6`. One of them is `let` and `const`
 
 To answer this question, we need to look at the following aspects for all 3 of them --
 
-- Scope: Scope is mainly of two types — function scope and block scope.
-- Behaviour: Redeclaration and Updation 
-- Hoisting: It is a concept which allow you to use the variable early and declare it at a later stage.
+- **Scope**: Scope is mainly of two types — function scope and block scope.
+- **Behaviour**: Redeclaration and Updation 
+- **Hoisting**: It is a concept that allows you to use the variable early and declare it later.
 
 
 ## `var`
@@ -247,3 +247,292 @@ if (true) {
   </tr>
 </tbody>
 </table>
+<hr>
+
+
+## Interview questions
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Be69eCvAWsU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### Theory questions
+- What is the difference between `let`, `var` and `const`? [Explaination](https://www.youtube.com/watch?v=Be69eCvAWsU&t=1190s){:target="_blank"}
+- Why `let` and `const` were introduced in ES6, when `var` was already present to declare variables? [Explaination](https://www.youtube.com/watch?v=Be69eCvAWsU){:target="_blank"}
+- Can we declare read-only objects and arrays using `const` keyword? If **not**, why? [Explaination](https://www.youtube.com/watch?v=Be69eCvAWsU&t=1020s){:target="_blank"}
+
+<hr>
+
+### `var` Input/Output
+**Question 1**
+```javascript
+// What will get printed in console?
+function solve() {
+  var foo = 10;
+  console.log("foo 1 : ", foo);   // ?
+}
+
+solve();
+console.log("foo 2 : ", foo);   // ?
+```
+[Solution 1](https://www.youtube.com/watch?v=Be69eCvAWsU&t=123s){:target="_blank"}
+
+**Question 2**
+```javascript
+// What will get printed in console?
+function solve() {
+  var foo = 10;
+  console.log("foo 1 : ", foo);   // ?
+
+  if(true) {
+    var foo = 30;
+    console.log("foo 2 : ", foo);   // ?
+  }
+
+  function solve2() {
+    var foo = 40;
+    console.log("foo 3 : ", foo);   // ?    
+  }
+
+  solve2();
+  console.log("foo 4 : ", foo);   // ?    
+}
+
+solve();
+```
+[Solution 2](https://www.youtube.com/watch?v=Be69eCvAWsU&t=200s){:target="_blank"}
+
+**Question 3**
+```javascript
+// What will get printed in console?
+var foo = 10;
+
+console.log("foo 1 : ", foo);   // ?
+console.log("window foo : ", window.foo);   // ?
+```
+[Solution 3](https://www.youtube.com/watch?v=Be69eCvAWsU&t=310s){:target="_blank"}
+
+**Question 4**
+```javascript
+// What will get printed in console?
+function solve() {
+  var foo = 10;
+  var foo = 20;
+
+  console.log("foo : ", foo);   // ?
+}
+solve();
+```
+[Solution 4](https://www.youtube.com/watch?v=Be69eCvAWsU&t=360s){:target="_blank"}
+
+**Question 5**
+```javascript
+// What will get printed in console?
+function solve() {
+  var foo = 10;
+  foo = 20;
+
+  console.log("foo : ", foo);   // ?
+}
+solve();
+```
+[Solution 5](https://www.youtube.com/watch?v=Be69eCvAWsU&t=405s){:target="_blank"}
+
+**Question 6**
+```javascript
+// What will get printed in console?
+function solve() {
+  console.log("foo : ", foo);   // ?
+  var foo = 10;
+}
+solve();
+```
+[Solution 6](https://www.youtube.com/watch?v=Be69eCvAWsU&t=431s){:target="_blank"}
+<hr>
+
+### `let` Input/Output
+
+**Question 1**
+```javascript
+// What will get printed in console?
+function solve() {
+  let foo = 10;
+  console.log("foo 1 : ", foo);   // ?
+
+  if(true) {
+    let foo = 30;
+    console.log("foo 2 : ", foo);   // ?
+  }
+
+  function solve2() {
+    let foo = 40;
+    console.log("foo 3 : ", foo);   // ? 
+  }
+
+  solve2();
+  console.log("foo 4 : ", foo);   // ?    
+}
+
+solve();
+```
+[Solution 1](https://www.youtube.com/watch?v=Be69eCvAWsU&t=505s){:target="_blank"}
+
+**Question 2**
+```javascript
+// What will get printed in console?
+let foo = 10;
+
+console.log("foo 1 : ", foo);   // ?
+console.log("window foo : ", window.foo);   // ?
+```
+[Solution 2](https://www.youtube.com/watch?v=Be69eCvAWsU&t=600s){:target="_blank"}
+
+**Question 3**
+```javascript
+// What will get printed in console?
+function solve() {
+  let foo = 10;
+  let foo = 20;
+
+  console.log("foo : ", foo);   // ?
+}
+solve();
+```
+[Solution 3](https://www.youtube.com/watch?v=Be69eCvAWsU&t=640s){:target="_blank"}
+
+**Question 4**
+```javascript
+// What will get printed in console?
+function solve() {
+  let foo = 10;
+  var foo = 20;
+
+  console.log("foo : ", foo);   // ?
+}
+solve();
+```
+[Solution 4](https://www.youtube.com/watch?v=Be69eCvAWsU&t=672s){:target="_blank"}
+**Question 5**
+```javascript
+// What will get printed in console?
+function solve() {
+  let foo = 10;
+  foo = 20;
+
+  console.log("foo : ", foo);   // ?
+}
+solve();
+```
+[Solution 5](https://www.youtube.com/watch?v=Be69eCvAWsU&t=699s){:target="_blank"}
+
+**Question 6**
+```javascript
+// What will get printed in console?
+function solve() {
+  console.log("foo : ", foo);   // ?
+  let foo = 10;
+}
+solve();
+```
+[Solution 6](https://www.youtube.com/watch?v=Be69eCvAWsU&t=807s){:target="_blank"}
+
+<hr>
+
+### `const` Input/Output
+
+**Question 1**
+```javascript
+// What will get printed in console?
+function solve() {
+  const foo = 10;
+  console.log("foo 1 : ", foo);   // ?
+
+  if(true) {
+    const foo = 30;
+    console.log("foo 2 : ", foo);   // ?
+  }
+
+  function solve2() {
+    const foo = 40;
+    console.log("foo 3 : ", foo);   // ? 
+  }
+
+  solve2();
+  console.log("foo 4 : ", foo);   // ?    
+}
+
+solve();
+```
+[Solution 1](https://www.youtube.com/watch?v=Be69eCvAWsU&t=960s){:target="_blank"}
+
+**Question 2**
+```javascript
+// What will get printed in console?
+const foo = 10;
+
+console.log("foo 1 : ", foo);   // ?
+console.log("window foo : ", window.foo);   // ?
+```
+[Solution 2](https://www.youtube.com/watch?v=Be69eCvAWsU&t=990s){:target="_blank"}
+
+**Question 3**
+```javascript
+// What will get printed in console?
+function solve() {
+  const foo = 10;
+  const foo = 20;
+
+  console.log("foo : ", foo);   // ?
+}
+solve();
+```
+[Solution 3](https://www.youtube.com/watch?v=Be69eCvAWsU&t=1020s){:target="_blank"} 
+
+**Question 4**
+```javascript
+// What will get printed in console?
+function solve() {
+  const foo = 10;
+  var foo = 20;
+
+  console.log("foo : ", foo);   // ?
+}
+solve();
+```
+[Solution 4](https://www.youtube.com/watch?v=Be69eCvAWsU&t=672s){:target="_blank"}
+
+**Question 5**
+```javascript
+// What will get printed in console?
+function solve() {
+  const foo = 10;
+  foo = 20;
+
+  console.log("foo : ", foo);   // ?
+}
+solve();
+```
+[Solution 5](https://www.youtube.com/watch?v=Be69eCvAWsU&t=1047s){:target="_blank"}
+
+**Question 6**
+```javascript
+// What will get printed in console?
+function solve() {
+  const foo = {a: 10};
+  foo['a'] = 20;
+
+  console.log("foo : ", foo);   // ?
+}
+solve();
+```
+[Solution 6](https://www.youtube.com/watch?v=Be69eCvAWsU&t=1067s){:target="_blank"}
+
+**Question 7**
+```javascript
+// What will get printed in console?
+function solve() {
+  console.log("foo : ", foo);   // ?
+  const foo = 10;
+}
+solve();
+```
+[Solution 7](https://www.youtube.com/watch?v=Be69eCvAWsU&t=1170s){:target="_blank"}
+

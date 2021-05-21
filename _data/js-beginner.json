@@ -4,7 +4,7 @@
         "link": "closures/"
     },
     {
-        "title": "Object.create",
+        "title": "Object.create()",
         "link": "object-create/",
         "youtube": "https://youtu.be/l8H8A2HlnsQ"
     },
@@ -55,6 +55,7 @@
     },
     {
         "title": "<code>var</code> vs <code>let</code> vs <code>const</code>",
-        "link": "var-let-const/"
+        "link": "var-let-const/",
+        "youtube": "https://youtu.be/Be69eCvAWsU"
     }
 ]
