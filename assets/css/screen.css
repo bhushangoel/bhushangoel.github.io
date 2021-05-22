@@ -964,3 +964,12 @@ iframe {
 img[src*="#post-img"] {
     box-shadow: 5px 5px 10px;
 }
+
+.io-tags {
+    font-size: 87.5%;
+    color: #e83e8c;
+    word-break: break-word;
+    background: bisque;
+    padding: 3px 5px;
+    border-radius: 4px;
+}

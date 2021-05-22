@@ -5,11 +5,7 @@ permalink: /projects
 comments: false
 ---
 
-
-
 <div class="row">
-    
-
   <div class="col-sm-6">
     <div class="card">
       <div class="card-body">

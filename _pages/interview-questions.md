@@ -49,8 +49,9 @@ comments: false
                 {% include js/js-advanced.html %}
             </div>
         </div>
-        <h3 id="js-io"> Input/output </h3>
+        <!-- <h3 id="js-io"> Input/output </h3>
         {% include js/js-io.html %}
+        <hr> -->
         <hr>
         <h2 id="angularjs"> Angular JS</h2>
         <h3 id="angular-theory"> Theory-based</h3>
