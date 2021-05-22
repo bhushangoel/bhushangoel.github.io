@@ -1,15 +1,15 @@
 [
-    {
+ {
+"title": "Input Output questions",
+"link":   "/input-output-interview-questions"
+},
+ {
         "title": "JavaScript",
         "link": "#js",
         "children": [
             {
                 "title": "Theory",
                 "link": "#js-theory"
-            },
-            {
-                "title": "Input/Output",
-                "link": "/input-output-interview-questions"
             }
         ]
     },
