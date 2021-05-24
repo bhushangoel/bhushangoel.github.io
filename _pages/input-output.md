@@ -5,23 +5,24 @@ permalink: /input-output-interview-questions
 comments: false
 ---
 
-This page consists of all the Input/Output related questions based on various topics related to JavaScript.
+This page consists of all the **Input/Output** related questions based on various topics related to **frontend**.
 
 Click on the **question title** to see the code and solution.
 
 {% for data in site.data.input-output %}
 <details markdown="1">
-<summary><b>Question {{forloop.index}}: </b>{{data.title}}</summary>
-```js
-{{data.code}}
-```
+<summary><b>Question {{forloop.index}}: </b>{{data.title}}
 {% if data.hints %}
-<div>Hints: 
+<span> 
 {% for hint in data.hints %}
 <code class="io-tags">{{hint}}</code>
 {% endfor %}
-</div>
+</span>
 {% endif %}
+</summary>
+```js
+{{data.code}}
+```
 
 <div>
 {% if data.solution %}

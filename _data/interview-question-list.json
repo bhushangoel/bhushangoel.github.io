@@ -1,9 +1,9 @@
 [
- {
-"title": "Input Output questions",
-"link":   "/input-output-interview-questions"
-},
- {
+    {
+        "title": "Input Output questions",
+        "link": "/input-output-interview-questions"
+    },
+    {
         "title": "JavaScript",
         "link": "#js",
         "children": [

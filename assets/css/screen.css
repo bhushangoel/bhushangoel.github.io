@@ -973,3 +973,19 @@ img[src*="#post-img"] {
     padding: 3px 5px;
     border-radius: 4px;
 }
+
+.footer-social-icons {
+    font-size: 25px;
+}
+
+.footer-social-icons > a {
+    margin: 0px 5px;
+}
+
+a.footer-youtube {
+    color: red !important;
+}
+
+a.footer-linkedin {
+    color: #0e65c2 !important;
+}

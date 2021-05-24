@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -11,7 +12,7 @@
     {% seo %}
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
     <link href="{{ site.baseurl }}/assets/css/screen.css" rel="stylesheet">
 
@@ -26,238 +27,255 @@
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-KWYD2XS0NS"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'G-KWYD2XS0NS');
+    gtag('config', 'G-KWYD2XS0NS');
 </script>
 {% endif %}
 
 {% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
 
 <body class="{{layout}}">
-<!-- defer loading of font and font awesome -->
-<noscript id="deferred-styles">
-    <link href="https://fonts.googleapis.com/css?family=Righteous%7CMerriweather:300,300i,400,400i,700,700i"
-          rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
-          integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-</noscript>
+    <!-- defer loading of font and font awesome -->
+    <noscript id="deferred-styles">
+        <link href="https://fonts.googleapis.com/css?family=Righteous%7CMerriweather:300,300i,400,400i,700,700i"
+            rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+            integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    </noscript>
 
 
-<!-- Begin Menu Navigation
+    <!-- Begin Menu Navigation
 ================================================== -->
-<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top mediumnavigation nav-down">
 
-    <div class="container pr-0">
 
-        <!-- Begin Logo -->
-        <a class="navbar-brand" href="{{ site.baseurl }}/">
-            <img src="{{ site.baseurl }}/{{ site.logo }}" alt="{{ site.name }}">
-        </a>
-        <!-- End Logo -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top mediumnavigation nav-down">
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMediumish"
+        <div class="container pr-0">
+
+            <!-- Begin Logo -->
+            <a class="navbar-brand" href="{{ site.baseurl }}/">
+                <img src="{{ site.baseurl }}/{{ site.logo }}" alt="{{ site.name }}">
+            </a>
+            <!-- End Logo -->
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMediumish"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <div class="collapse navbar-collapse" id="navbarMediumish">
+            <div class="collapse navbar-collapse" id="navbarMediumish">
 
-            <!-- Begin Menu -->
+                <!-- Begin Menu -->
 
-            <ul class="navbar-nav ml-auto">
+                <ul class="navbar-nav ml-auto">
 
-                {% if page.url == "/" %}
-                <li class="nav-item active">
-                    {% else %}
-                <li class="nav-item">
-                    {% endif %}
-                    <!--                    <a class="nav-link" href="{{ site.baseurl }}/index.html">Home</a>-->
-                </li>
+                    {% if page.url == "/" %}
+                    <li class="nav-item active">
+                        {% else %}
+                    <li class="nav-item">
+                        {% endif %}
+                        <!--                    <a class="nav-link" href="{{ site.baseurl }}/index.html">Home</a>-->
+                    </li>
 
-                {% if page.url == "/" or page.url contains "categories" %}
-                <li class="nav-item dropdown active">
-                    {% else %}
-                <li class="nav-item dropdown">
-                    {% endif %}
-                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
-                       aria-haspopup="true" aria-expanded="false">Blogs</a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item"
-                           href="{{ site.baseurl }}/index.html">All Blogs</a>
-                        {% for category in site.categories %}
-                        <a class="dropdown-item"
-                           href="{{site.baseurl}}/categories#{{ category[0] | url_escape | strip | replace: ' ', '-' }}">{{
-                            category[0] }} ({{ category[1].size }})</a>
-                        {% endfor %}
-                    </div>
-                </li>
+                    {% if page.url == "/" or page.url contains "categories" %}
+                    <li class="nav-item dropdown active">
+                        {% else %}
+                    <li class="nav-item dropdown">
+                        {% endif %}
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                            aria-haspopup="true" aria-expanded="false">Blogs</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="{{ site.baseurl }}/index.html">All Blogs</a>
+                            {% for category in site.categories %}
+                            <a class="dropdown-item"
+                                href="{{site.baseurl}}/categories#{{ category[0] | url_escape | strip | replace: ' ', '-' }}">{{
+                                category[0] }} ({{ category[1].size }})</a>
+                            {% endfor %}
+                        </div>
+                    </li>
 
-                {% if page.url == "/interview-questions" %}
-                <li class="nav-item active">
-                    {% else %}
-                <li class="nav-item">
-                    {% endif %}
-                    <a class="nav-link" href="{{ site.baseurl }}/interview-questions">Interview Questions</a>
-                </li>
+                    {% if page.url == "/interview-questions" %}
+                    <li class="nav-item active">
+                        {% else %}
+                    <li class="nav-item">
+                        {% endif %}
+                        <a class="nav-link" href="{{ site.baseurl }}/interview-questions">Interview Questions</a>
+                    </li>
 
-<!--                https://docs.google.com/forms/d/e/1FAIpQLSf904kJ18vk_5Gk4jUAAKwQHhYjWYe2uhSVEMCCmcqqYB5pyA/viewform?usp=sf_link-->
+                    <!--                https://docs.google.com/forms/d/e/1FAIpQLSf904kJ18vk_5Gk4jUAAKwQHhYjWYe2uhSVEMCCmcqqYB5pyA/viewform?usp=sf_link-->
 
-                {% if page.url == "/projects" %}
-                <li class="nav-item active">
-                    {% else %}
-                <li class="nav-item">
-                    {% endif %}
-                    <a class="nav-link" href="{{ site.baseurl }}/projects">Project Showcase</a>
-                </li>
-
-
-                <li class="nav-item">
-                    <a class="nav-link" href="https://www.youtube.com/channel/UCTP8RroItEXLYJdCbzE7UOw" target="_blank">Watch on youtube</a>
-                </li>
-
-                {% if page.url == "/other-reference-links" %}
-                <li class="nav-item dropdown active">
-                    {% else %}
-                <li class="nav-item dropdown">
-                    {% endif %}
-                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
-                       aria-haspopup="true" aria-expanded="false">More</a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="{{ site.baseurl }}/other-reference-links">Other reference links</a>
-                        <a class="dropdown-item"
-                           href="https://join.slack.com/t/crackingthefr-a7q3001/shared_invite/zt-q1w81ehe-B9edtZmVbXI_k2QBW1Ki6A" target="_blank">Join Slack</a>
-                    </div>
-                </li>
+                    {% if page.url == "/projects" %}
+                    <li class="nav-item active">
+                        {% else %}
+                    <li class="nav-item">
+                        {% endif %}
+                        <a class="nav-link" href="{{ site.baseurl }}/projects">Project Showcase</a>
+                    </li>
 
 
-                {% include search-lunr.html %}
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.youtube.com/channel/UCTP8RroItEXLYJdCbzE7UOw"
+                            target="_blank">Youtube channel</a>
+                    </li>
 
-            </ul>
+                    {% if page.url == "/other-reference-links" %}
+                    <li class="nav-item dropdown active">
+                        {% else %}
+                    <li class="nav-item dropdown">
+                        {% endif %}
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                            aria-haspopup="true" aria-expanded="false">More</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="{{ site.baseurl }}/other-reference-links">Other reference
+                                links</a>
+                            <a class="dropdown-item"
+                                href="https://join.slack.com/t/crackingthefr-a7q3001/shared_invite/zt-q1w81ehe-B9edtZmVbXI_k2QBW1Ki6A"
+                                target="_blank">Join Slack</a>
+                        </div>
+                    </li>
 
-            <!-- End Menu -->
+
+                    {% include search-lunr.html %}
+
+                </ul>
+
+                <!-- End Menu -->
+
+            </div>
 
         </div>
-
-    </div>
-</nav>
-<!-- End Navigation
+    </nav>
+    <!-- End Navigation
 ================================================== -->
 
-<div class="site-content">
+    <div class="site-content">
 
-    <div class="container">
-
-        <!-- Site Title
-        ================================================== -->
-        {% if page.url == "/" %}
-        <div class="mainheading">
-            <h1 class="sitetitle">{{ site.name }}</h1>
-            <p class="lead">
-                {{ site.description }}
-            </p>
-        </div>
-        {% endif %}
-
-        <!-- Content
-        ================================================== -->
-        <div class="main-content">
-            {{ content }}
-        </div>
-
-        {% if site.mailchimp-list %}
-        <!-- Bottom Alert Bar
-        ================================================== -->
-        <div class="alertbar">
-            <div class="container text-center">
-                <span><img src="{{ site.baseurl }}/{{ site.logo }}" alt="{{site.title}}" style="width: 50px;"> &nbsp; Never miss a <b>story</b> from us, subscribe to our newsletter</span>
-                <form action="{{site.mailchimp-list}}" method="post" name="mc-embedded-subscribe-form"
-                      class="wj-contact-form validate" target="_blank" novalidate>
-                    <div class="mc-field-group">
-                        <input type="email" placeholder="Email" name="EMAIL" class="required email" id="mce-EMAIL"
-                               autocomplete="on" required>
-                        <input type="submit" value="Subscribe" name="subscribe" class="heart">
-                    </div>
-                </form>
-            </div>
-        </div>
-        {% endif %}
-
-    </div>
-
-    <!-- Categories Jumbotron
-    ================================================== -->
-    <div class="jumbotron fortags">
-        <div class="d-md-flex h-100">
-            <div class="col-md-4 transpdark align-self-center text-center h-100">
-                <div class="d-md-flex align-items-center justify-content-center h-100">
-                    <h2 class="d-md-block align-self-center py-1 font-weight-light">Tags <span
-                            class="d-none d-md-inline">→</span></h2>
-                </div>
-            </div>
-
-            <div class="col-md-8 p-5 align-self-center text-center">
-                {% assign tags_list = site.tags %}
-                {% if tags_list.first[0] == null %}
-                {% for tag in tags_list %}
-                <a class="mt-1 mb-1"
-                   href="{{site.baseurl}}/categories#{{ tag | url_escape | strip | replace: ' ', '-' }}">{{
-                    tag | camelcase }} ({{ site.tags[tag].size }})</a>
-                {% endfor %}
-                {% else %}
-                {% for tag in tags_list %}
-                <a class="mt-1 mb-1"
-                   href="{{site.baseurl}}/categories#{{ tag[0] | url_escape | strip | replace: ' ', '-' }}">{{
-                    tag[0] | camelcase }} ({{ tag[1].size }})</a>
-                {% endfor %}
-                {% endif %}
-                {% assign tags_list = nil %}
-            </div>
-        </div>
-    </div>
-
-    <!-- Begin Footer
-    ================================================== -->
-    <footer class="footer">
         <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-sm-6 text-center text-lg-left">
-                    No Copyright © {{ site.time | date: "%Y" }} | Feel free to copy anything | {{ site.name }}
+
+            <!-- Site Title
+        ================================================== -->
+            {% if page.url == "/" %}
+            <div class="mainheading">
+                <h1 class="sitetitle">{{ site.name }}</h1>
+                <p class="lead">
+                    {{ site.description }}
+                </p>
+            </div>
+            {% endif %}
+
+            <!-- Content
+        ================================================== -->
+            <div class="main-content">
+                {{ content }}
+            </div>
+
+            {% if site.mailchimp-list %}
+            <!-- Bottom Alert Bar
+        ================================================== -->
+            <div class="alertbar">
+                <div class="container text-center">
+                    <span><img src="{{ site.baseurl }}/{{ site.logo }}" alt="{{site.title}}" style="width: 50px;">
+                        &nbsp; Never miss a <b>story</b> from us, subscribe to our newsletter</span>
+                    <form action="{{site.mailchimp-list}}" method="post" name="mc-embedded-subscribe-form"
+                        class="wj-contact-form validate" target="_blank" novalidate>
+                        <div class="mc-field-group">
+                            <input type="email" placeholder="Email" name="EMAIL" class="required email" id="mce-EMAIL"
+                                autocomplete="on" required>
+                            <input type="submit" value="Subscribe" name="subscribe" class="heart">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            {% endif %}
+
+        </div>
+
+        <!-- Categories Jumbotron
+    ================================================== -->
+        <div class="jumbotron fortags">
+            <div class="d-md-flex h-100">
+                <div class="col-md-4 transpdark align-self-center text-center h-100">
+                    <div class="d-md-flex align-items-center justify-content-center h-100">
+                        <h2 class="d-md-block align-self-center py-1 font-weight-light">Tags <span
+                                class="d-none d-md-inline">→</span></h2>
+                    </div>
+                </div>
+
+                <div class="col-md-8 p-5 align-self-center text-center">
+                    {% assign tags_list = site.tags %}
+                    {% if tags_list.first[0] == null %}
+                    {% for tag in tags_list %}
+                    <a class="mt-1 mb-1"
+                        href="{{site.baseurl}}/categories#{{ tag | url_escape | strip | replace: ' ', '-' }}">{{
+                        tag | camelcase }} ({{ site.tags[tag].size }})</a>
+                    {% endfor %}
+                    {% else %}
+                    {% for tag in tags_list %}
+                    <a class="mt-1 mb-1"
+                        href="{{site.baseurl}}/categories#{{ tag[0] | url_escape | strip | replace: ' ', '-' }}">{{
+                        tag[0] | camelcase }} ({{ tag[1].size }})</a>
+                    {% endfor %}
+                    {% endif %}
+                    {% assign tags_list = nil %}
                 </div>
             </div>
         </div>
-    </footer>
-    <!-- End Footer
+
+        <!-- Begin Footer
+    ================================================== -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 text-center text-lg-left">
+                        No Copyright © {{ site.time | date: "%Y" }} | Feel free to copy anything | {{ site.name }}
+                    </div>
+                    <div class="col-md-6 col-sm-6 text-center text-lg-right footer-social-icons">
+                        <a target="_blank" class="footer-linkedin" href="https://www.linkedin.com/in/bhushangoel/">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a target="_blank" class="footer-youtube" href="https://www.youtube.com/channel/UCTP8RroItEXLYJdCbzE7UOw">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a target="_blank" class="footer-mail" href="mailto:crackingthefrontendinterview@gmail.com">
+                            <i class="far fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- End Footer
     ================================================== -->
 
-</div> <!-- /.site-content -->
+    </div> <!-- /.site-content -->
 
-<!-- Scripts
+    <!-- Scripts
 ================================================== -->
 
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
         integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
         crossorigin="anonymous"></script>
 
-<script src="{{ site.baseurl }}/assets/js/mediumish.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/mediumish.js"></script>
 
-{% if site.lazyimages == "enabled" %}
-<script src="{{ site.baseurl }}/assets/js/lazyload.js"></script>
-{% endif %}
+    {% if site.lazyimages == "enabled" %}
+    <script src="{{ site.baseurl }}/assets/js/lazyload.js"></script>
+    {% endif %}
 
-<script src="{{ site.baseurl }}/assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/ie10-viewport-bug-workaround.js"></script>
 
-{% if page.layout == 'post' %}
-<script id="dsq-count-scr" src="//{{site.disqus}}.disqus.com/count.js"></script>
-{% endif %}
+    {% if page.layout == 'post' %}
+    <script id="dsq-count-scr" src="//{{site.disqus}}.disqus.com/count.js"></script>
+    {% endif %}
 
 </body>
+
 </html>
