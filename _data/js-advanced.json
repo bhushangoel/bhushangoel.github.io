@@ -13,5 +13,11 @@
     },
     {
         "title": "Time to first byte"
+    },
+    {
+        "title": "Map vs weakMap"
+    },
+    {
+        "title": "Set vs weakSet"
     }
 ]
