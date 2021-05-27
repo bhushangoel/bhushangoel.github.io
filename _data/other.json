@@ -26,5 +26,9 @@
     {
         "title": "HTTP Concept",
         "link": "https://developer.mozilla.org/en-US/docs/Web/HTTP"
+    },
+    {
+        "t":"Eric Elliot",
+        "l":"https://medium.com/javascript-scene/the-best-way-to-learn-to-code-is-to-code-learn-app-architecture-by-building-apps-7ec029db6e00"
     }
 ]
