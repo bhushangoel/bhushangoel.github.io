@@ -20,9 +20,17 @@ Click on the **question title** to see the code and solution.
 </span>
 {% endif %}
 </summary>
+{% if data.type == 'js' %}
 ```js
 {{data.code}}
 ```
+{% endif %}
+
+{% if data.type == 'css' %}
+```htmlcss
+{{data.code}}
+```
+{% endif %}
 
 <div>
 {% if data.solution %}

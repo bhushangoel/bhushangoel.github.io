@@ -64,5 +64,8 @@
         },
         {
                 "title":"How would you write a code to freeze the top row and column of a table?"
+        },
+        {
+                "title": "CSS Specificty"
         }
 ]
