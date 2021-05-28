@@ -10,7 +10,7 @@ This page consists of all the **Input/Output** related questions based on variou
 Click on the **question title** to see the code and solution.
 
 {% for data in site.data.input-output %}
-<details markdown="1">
+<details id="{{forloop.index}}" markdown="1">
 <summary><b>Question {{forloop.index}}: </b>{{data.title}}
 {% if data.hints %}
 <span> 

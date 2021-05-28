@@ -125,6 +125,22 @@
     console.log(arr);
 
   
+- title: "What will be the output here?"
+  hints: [JS, event-loop]
+  type: js
+  solution: 
+  code: |
+    let a = true;
+
+    setTimeout(() => {
+      a = false;
+    }, 2000);
+
+    while(a) {
+      console.log("Hello");
+    }
+    
+# css
 - title: Which of these selectors will get higher priority?
   hints: [CSS Specificity]
   type: css
@@ -143,6 +159,8 @@
     p {
       color: blue
     }
+
+
 
 # - title: 
 #   hints:
