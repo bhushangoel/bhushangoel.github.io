@@ -16,7 +16,8 @@
         "title": "Destructuring and Rest parameter"
     },
     {
-        "title": "Spread operator"
+        "title": "...(Rest paremeter and Spread operator)",
+        "link": "https://crackingthefrontendinterview.com/spread-rest-operator/"
     },
     {
         "title": "Web workers"
