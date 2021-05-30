@@ -33,5 +33,11 @@
     {
         "title": "Temporal dead zone",
         "youtube": "https://www.youtube.com/watch?v=Be69eCvAWsU&t=880s"
+    },
+    {
+        "title": "Map VS weekMap"
+    },
+    {
+        "title": "Set VS weekSet"
     }
 ]

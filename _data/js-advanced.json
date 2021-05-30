@@ -22,5 +22,8 @@
     },
     {
         "title": "How does <code>Event loop</code> works in JS?"
+    },
+    {
+        "title": "How does <code>new</code> keyword works in JS?"
     }
 ]
