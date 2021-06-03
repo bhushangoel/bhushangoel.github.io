@@ -39,8 +39,11 @@ The newly create object will inherit all the prototype object properties. In thi
 ## Interview questions
 * [Object.create() - Input/Ouput](/io-5)
 * What is the difference between `Object.create()` and `new` keyword?
-  > Ans: It creates a **new object** by copying an **existing object** into the **prototype of a new object**.
+  .
 * How `Object.create()` is different from other object creation methods?
   > Ans:  It creates a **new object** by copying an **existing object** into the **prototype of a new object**.
+
+* Difference between `var obj = Object.create(null)` and `var obj = Object.create()` ?
+
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/l8H8A2HlnsQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

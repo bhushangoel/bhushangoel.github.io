@@ -2,6 +2,7 @@
   solution: io-1
   type: js
   hints: [JS, var-let-const, use strict]
+  company: [Nagarro, Axtria]
   code: |
     var x = 1;
     var x = 2;
@@ -19,6 +20,7 @@
 
 - title: Is this statement correct? If yes, what will be the output here?
   solution: io-2
+  company: [Nagarro, HCL, GreyHR]
   type: js
   hints: [JS, ES6, arrow functions]
   code: |
@@ -28,6 +30,7 @@
 - title: What value will be displayed in the <code>console</code>?
   solution: io-3
   type: js
+  company: []
   hints: [JS, arrays]
   code: |
     var arr = [];
@@ -39,6 +42,7 @@
 - title: What will happen, if we declare an array using a <code>const</code> and try to change one of its values?
   solution: js-i-o-question-4
   type: js
+  company: [Walmart, Publicis Sapient]
   hints: [JS, ES6, const]
   code: |
     const s = [5, 6, 7];
@@ -48,6 +52,7 @@
 - title: What will be the output here, and how does <code>Object.create()</code> works?
   solution: io-5
   type: js
+  company: [Nagarro]
   hints: [JS, Object creation in JS]
   video: https://www.youtube.com/watch?v=l8H8A2HlnsQ
   code: |
@@ -59,6 +64,7 @@
 - title: What will be the output?
   hints: [JS, arrays]
   type: js
+  company: []
   solution: js-i-o-question-6
   code: |
     let arr = [];
@@ -68,6 +74,7 @@
 - title: What will be the length of an array?
   solution: io-7
   type: js
+  company: []
   hints: [JS, arrays]
   code: |
     let arr = [1 , , 3];
@@ -76,6 +83,7 @@
 - title: What will be the output here, and how does <b>(...)</b> works?
   solution: 
   type: js
+  company: [HCL]
   hints: [JS, ES6, Spread operator]
   code: |
     function sum(x, y, z) {
@@ -87,6 +95,7 @@
 - title: What will be the output here and why?
   solution: 
   type: js
+  company: [Walmart]
   hints: [JS, this]
   code: |
     var hero = {
@@ -102,6 +111,7 @@
 - title: How does <code>bind()</code> works, and what will be the output here?
   solution: 
   type: js
+  company: [Publicis Sapient, HCL, Nagarro]
   hints: [JS, this, bind()]
   code: |
     var obj = {
@@ -118,6 +128,7 @@
 - title: What will be the output, if we use <code>delete</code> operator to delete an item from an <code>array</code>?
   hints: [JS, delete]
   type: js
+  company: [HCL]
   solution: 
   code: |
     const arr = [10, 20, 30, 40];
@@ -128,6 +139,7 @@
 - title: "What will be the output here?"
   hints: [JS, event-loop]
   type: js
+  company: []
   solution: 
   code: |
     let a = true;
@@ -139,10 +151,75 @@
     while(a) {
       console.log("Hello");
     }
+
+- title: "What will be the output here, if we use the same name for a function and a variable: Part 1?"
+  hints: [JS, scope, hoisting]
+  type: js
+  company: [Walmart]
+  solution: 
+  code: |
+    var a = 1;
+
+    function b() {
+      a = 10;
+      function a() {}
+      return;
+    }
+    b();
+    console.log(a); // ?
+
+- title: "What will be the output here, if we use the same name for a function and a variable: Part 2?"
+  hints: [JS, scope, hoisting]
+  type: js
+  company: [Walmart]
+  solution: 
+  code: |
+    var a = 1;
+
+    function b() {
+      a = 10;
+      return;
+      function a() {}
+    }
+    b();
+    console.log(a); // ?
+
+- title: "What will be the output here, if we use the same name for a function and a variable: Part 3?"
+  hints: [JS, scope, hoisting]
+  type: js
+  company: [Walmart]
+  solution: 
+  code: |
+    var a = 1;
+
+    function b() {
+      a = 10;
+      a = function() {}
+      return;
+    }
+    b();
+    console.log(a); // ?
+
+- title: "What will happen, if we return an object explicitly from a constructor function?"
+  hints: [JS, constructor-function]
+  company: [Walmart]
+  type: js
+  solution: 
+  code: |
+    function Car() {
+      this.name = name; 
+      this.color = color;
+
+      return {foo: 1, bar: 2};
+    }
+
+    var bmw = new Car(); 
+
     
 # css
 - title: Which of these selectors will get higher priority?
   hints: [CSS Specificity]
+  company: [Walmart]
   type: css
   solution: 
   code: |
