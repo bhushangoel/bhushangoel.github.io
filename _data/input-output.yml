@@ -215,6 +215,18 @@
 
     var bmw = new Car(); 
 
+- title: "What will happen, if we try to create an object using <code>Object.create()</code>?"
+  hints: [JS, Object.create()]
+  company: [Walmart]
+  type: js
+  solution: 
+  code: |
+    var obj = Object.create(null);
+    var obj2 = Object.create();
+
+    console.log(obj);   // ?
+    console.log(obj2);  // ?
+
     
 # css
 - title: Which of these selectors will get higher priority?
