@@ -227,6 +227,34 @@
     console.log(obj);   // ?
     console.log(obj2);  // ?
 
+- title: "What will be the output, if we create an an <code>arrow function</code> inside a <code>Class</code>?"
+  hints: [JS, Class, arrow function]
+  company: [Walmart]
+  type: js
+  solution: 
+  code: |
+    class User {
+      constructor() {
+        this.name = "foo";
+      }
+
+      getName() {
+        console.log('get name', this.name)
+      }
+
+      getAge = () => {
+        console.log('get age', this.name)
+      }
+    }
+
+    var user1 = new User();
+
+    console.log(user1);   // ?
+
+    user1.getName();    // ?
+    user1.getAge();   // ?
+
+
     
 # css
 - title: Which of these selectors will get higher priority?

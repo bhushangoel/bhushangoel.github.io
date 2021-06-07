@@ -3,7 +3,8 @@ layout: post
 title:  "Object.create()"
 author: Bhushan Goel
 categories: [ Javascript ]
-tags: [  ]
+tags: [ JS, Object creation ]
+companies: [Walmart, Nagarro]
 description: "Object.create() is a way to create a new object. It uses an existing object as the prototype of the newly created object."
 featured: true
 comments: false

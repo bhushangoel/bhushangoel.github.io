@@ -12,14 +12,25 @@ Click on the **question title** to see the code and solution.
 {% for data in site.data.input-output %}
 <details id="{{forloop.index}}" markdown="1">
 <summary><b>Question {{forloop.index}}: </b>{{data.title}}
+{% if data.company.size > 1 %}
+<b>Asked in: </b><span> 
+{% for company in data.company %}
+<code class="io-tags">{{company}}</code>
+{% endfor %}
+</span>
+{% endif %}
+</summary>
+
+<div>
 {% if data.hints %}
-<span> 
+<b>Hints: </b><span> 
 {% for hint in data.hints %}
 <code class="io-tags">{{hint}}</code>
 {% endfor %}
 </span>
 {% endif %}
-</summary>
+</div>
+
 {% if data.type == 'js' %}
 ```js
 {{data.code}}

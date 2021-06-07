@@ -40,5 +40,8 @@
     },
     {
         "title": "Set VS weekSet"
+    },
+    {
+        "title": "Can we add an arrow function inside a <code>Class</code> ?"
     }
 ]

@@ -1,14 +1,16 @@
 ---
 layout: post
-title:  "Center aligned <div>"
+title:  "Center aligned div"
 author: Bhushan Goel
 categories: [ CSS ]
-tags: [ Code Implementation ]
-description: "Learn to center align `<div>` with fixed and variable width and height"
+companies: [Nagarro]
+tags: [ Code Implementation, CSS ]
+description: "Learn to center align `<div>` with fixed and variable width and height "
 featured: false
 image: assets/images/css.png
 comments: false
 ---
+
 Learn to center align `<div>` with fixed and variable width and height
 
 ## With fixed width and height

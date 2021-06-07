@@ -974,6 +974,16 @@ img[src*="#post-img"] {
     border-radius: 4px;
 }
 
+.io-tags-company {
+    font-size: 87.5%;
+    color: #ffffff;
+    word-break: break-word;
+    background: #c4c9ff;
+    padding: 3px 5px;
+    border-radius: 4px;
+    
+}
+
 .footer-social-icons {
     font-size: 25px;
 }
@@ -988,4 +998,13 @@ a.footer-youtube {
 
 a.footer-linkedin {
     color: #0e65c2 !important;
+}
+
+.fw-bold {
+    font-weight: bold;
+}
+
+.small-font {
+    font-size: 14px;
+    color: #a59da5;
 }

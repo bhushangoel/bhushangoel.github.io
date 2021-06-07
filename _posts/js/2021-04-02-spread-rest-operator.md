@@ -3,6 +3,7 @@ layout: post
 title:  "Spread and Rest operator"
 author: Bhushan Goel
 categories: [ Javascript ]
+companies: [Nagarro]
 tags: [ ES6 ]
 description: "Spread and Rest operators are new operators added in ES6 version. "
 featured: false

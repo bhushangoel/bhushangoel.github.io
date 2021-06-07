@@ -3,7 +3,7 @@ layout: post
 title:  "Functions : first class objects"
 author: Bhushan Goel 
 categories: [ Javascript ]
-tags: [  ]
+tags: [ Functions in JS ]
 description: "Functions in JavaScript possess all the capabilities of objects and are thus treated like any other object in the language."
 featured: false 
 image: assets/images/js.png 
