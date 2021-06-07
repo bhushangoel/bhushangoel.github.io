@@ -6,7 +6,11 @@
 
         <li class="list-group-item d-flex justify-content-between align-items-start">
             <div class="ms-2 me-auto">
-                <div class="fw-bold">{{ post.title }}</div>
+                <div class="fw-bold">
+                    <a href="{{ site.baseurl }}{{ post.url }}">
+                        {{ post.title }}
+                    </a>
+                </div>
                 <div class="wrapfooter">
                     <span class="author-meta">
                         <span class="post-date">{{ post.date | date_to_string }}</span>
@@ -16,17 +20,17 @@
 
                 {% if post.companies %}
                 <div class="small-font">
-                    Asked In:<span>
+                    <i>Asked In </i>:<span>
                         {% for company in post.companies %}
                         <code class="io-tags-company">{{company}}</code>
                         {% endfor %}
                     </span>
                 </div>
                 {% endif %}
-                
+
                 {% if post.tags %}
                 <div class="small-font">
-                    Tags:<span>
+                    <i>Tags </i>:<span>
                         {% for tag in post.tags %}
                         <code class="io-tags">{{tag}}</code>
                         {% endfor %}
@@ -40,7 +44,11 @@
                     <a href="{{ site.baseurl }}{{ post.url }}">
                         <span class="badge bg-success rounded-pill">Read</span>
                     </a>
-                    <span class="badge bg-danger rounded-pill">Watch</span>
+                    {% if post.youtube %}
+                    <a href="{{ post.youtube }}" target="_blank">
+                        <span class="badge bg-danger rounded-pill">Watch</span>
+                    </a>
+                    {% endif %}
                 </div>
             </div>
         </li>

@@ -1008,3 +1008,7 @@ a.footer-linkedin {
     font-size: 14px;
     color: #a59da5;
 }
+
+.list-group-item:first-child, .list-group-item:last-child {
+    border-radius: 0 !important;
+}
