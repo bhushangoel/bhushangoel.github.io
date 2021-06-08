@@ -10,14 +10,15 @@
         "link": "currying/"
     },
     {
-        "title": "Debouncing vs throttling"
+        "title": "Debouncing vs throttling",
+        "link": "debouncing-throttling/"
     },
     {
         "title": "Destructuring and Rest parameter"
     },
     {
         "title": "...(Rest paremeter and Spread operator)",
-        "link": "https://crackingthefrontendinterview.com/spread-rest-operator/"
+        "link": "spread-rest-operator/"
     },
     {
         "title": "Web workers"
