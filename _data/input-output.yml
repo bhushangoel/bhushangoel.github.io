@@ -254,7 +254,27 @@
     user1.getName();    // ?
     user1.getAge();   // ?
 
+- title: What will be the output here?
+  hints: [JS, this, execution context, arguments]
+  company: [Wunderman Thompson]
+  type: js
+  solution: 
+  code: |
+    var a = 5;
+    function length() {
+      console.log('this : ', this.a);
+    }
 
+    var obj = {
+      a: 10,
+      method: function(a) {
+        length(); 
+        console.log(arguments)
+        arguments[0]();
+      }
+    }
+
+    obj.method(length, 2);
     
 # css
 - title: Which of these selectors will get higher priority?
