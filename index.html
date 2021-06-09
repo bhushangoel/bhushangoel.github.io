@@ -6,6 +6,29 @@ title: Home
 
 <!-- Posts Index
 ================================================== -->
+<form>
+    <div class="form-row">
+        <div class="form-group col-md-4">
+            <label for="companies">Companies</label>
+            <select id="companies" class="form-control">
+                <option selected>Choose company</option>
+                {% for company in site.companies %}
+                    <option value="{{company}}">{{company}}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div class="form-group col-md-4">
+            <label for="inputState">Tags</label>
+            <select id="inputState" class="form-control">
+                <option selected>Choose category</option>
+                {% for tag in site.tags %}
+                    <option value="{{tag}}">{{tag}}</option>
+                {% endfor %}
+            </select>
+        </div>
+    </div>
+</form>
+
 <section class="recent-posts">
 
     <div class="section-title">
@@ -29,9 +52,8 @@ title: Home
 <!-- Pagination
 ================================================== -->
 <div class="bottompagination">
-<div class="pointerup"><i class="fa fa-caret-up"></i></div>
-<span class="navigation" role="navigation">
-    {% include pagination.html %}
-</span>
+    <div class="pointerup"><i class="fa fa-caret-up"></i></div>
+    <span class="navigation" role="navigation">
+        {% include pagination.html %}
+    </span>
 </div>
-
