@@ -6,6 +6,7 @@ categories: [ Javascript ]
 tags: [ Walmart ]
 description: "two techniques to limit the rate of calling a function"
 comments: false
+draft: true
 ---
 
 ## Debouncing
