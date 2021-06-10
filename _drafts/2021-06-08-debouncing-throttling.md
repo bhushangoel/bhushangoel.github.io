@@ -16,6 +16,37 @@ In the `debouncing technique`, no matter how many times the user fires the event
 
 Suppose, there is a kid continously asking for a chocolate to his parents. They can debounce his request by saying that we will give you another chocolate after 30 min, once you stop asking.
 
+```html
+<input placeholder="Enter some text" name="name"/>
+<p id="values"></p>
+```
+
+```js
+const input = document.querySelector('input');
+const log = document.getElementById('values');
+
+const processChanges = debounce(() => {
+  saveInput();
+});
+
+input.addEventListener('input', processChanges);
+
+function debounce(func, timeout = 300) {
+  console.log(func)
+  let timer;
+  return (...args) => {
+    clearTimeout(timer);
+    timer = setTimeout(() => {
+      func.apply(this, args);
+    }, timeout);
+  };
+}
+
+function saveInput() {
+  console.log('Saving data');
+}
+```
+
 ### Use
 Can be used in a situation where we need to hit an API on the basis of what user is typing in the search box. Api will only hit after a specified time once the user stops typing.
 

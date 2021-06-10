@@ -46,6 +46,9 @@
         "title": "Can we add an arrow function inside a <code>Class</code> ?"
     },
     {
+        "title": "What is an execution context, and how can we change it at runtime?"
+    },
+    {
         "title": "<code>Symbols</code> in Javascript"
     }
 ]
