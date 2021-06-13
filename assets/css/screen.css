@@ -1012,3 +1012,26 @@ a.footer-linkedin {
 .list-group-item:first-child, .list-group-item:last-child {
     border-radius: 0 !important;
 }
+
+.interview-questions-section details p {
+    color: rgba(0, 0, 0, .6);
+}
+
+.company-filter li a {
+    background: #00ab6b;
+    color: #fff;
+    padding: 2px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.applied-filter-list {
+    font-size: 12px;
+    border-bottom: transparent !important;
+    font-weight: 400;
+}
+
+.applied-filter-list div {
+    border: 1px solid;
+    padding: 4px;
+}

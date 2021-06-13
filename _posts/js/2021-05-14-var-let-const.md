@@ -9,6 +9,7 @@ featured: false
 image: assets/images/js.png
 comments: false
 toc: true
+youtube: "https://www.youtube.com/watch?v=Be69eCvAWsU"
 ---
 
 <!-- [var](#var) -->

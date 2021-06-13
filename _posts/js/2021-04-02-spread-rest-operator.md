@@ -10,6 +10,7 @@ featured: false
 image: assets/images/js.png
 comments: false
 toc: true
+youtube: "https://www.youtube.com/watch?v=jmJGsfk9ZeU"
 ---
 
 <!-- [Rest](#rest-parameter) -->
@@ -315,13 +316,28 @@ console.log(Math.min(...arr));    // 0
 
 <hr>
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jmJGsfk9ZeU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Interview questions
+<div class="interview-questions-section">
+<details>
+  <summary><b>Question 1: </b>What are some of the new features introduced in ES6?</summary>
+<p>Along with let, const, arrow functions etc. a triple dot(...) operator was also introduced in ES6. It can be used in two different ways in JavaScript -- Rest parameter and Spread operator</p>
+</details>
 
-- What are some of the new features introduced in ES6?
-  
-- Differentiate between rest and spread operator.
+<details>
+  <summary><b>Question 2: </b>Differentiate between rest and spread operator.</summary>
+  <p><a href="#summary">Answer here</a></p>
+</details>
 
-- Rest parameter vs arguments object.
+<details>
+  <summary><b>Question 3: </b>Rest parameter vs arguments object.</summary>
+  <p><a href="#arguments-object">Answer here</a></p>
+</details>
 
-- Can we use `spread operator` to create a deep copy of an object/array?
-  > Yes, it can be used to create a deep copy, provided there is no nesting in array or object.
+<details>
+  <summary><b>Question 4: </b>Can we use <code>spread operator</code> to create a deep copy of an object/array?</summary>
+<p> Yes, it can be used to create a deep copy, provided there is no nesting in array or object.</p>
+</details>
+</div>
+

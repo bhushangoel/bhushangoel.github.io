@@ -6,44 +6,92 @@ title: Home
 
 <!-- Posts Index
 ================================================== -->
-<form>
+<!-- <form action="">
     <div class="form-row">
         <div class="form-group col-md-4">
-            <label for="companies">Companies</label>
+            <label for="inputState">Company</label>
             <select id="companies" class="form-control">
-                <option selected>Choose company</option>
-                {% for company in site.companies %}
-                    <option value="{{company}}">{{company}}</option>
-                {% endfor %}
-            </select>
-        </div>
-        <div class="form-group col-md-4">
-            <label for="inputState">Tags</label>
-            <select id="inputState" class="form-control">
-                <option selected>Choose category</option>
-                {% for tag in site.tags %}
-                    <option value="{{tag}}">{{tag}}</option>
+                <option selected>Choose...</option>
+
+                {% for company in site.data.companies %}
+                <option value="{{company}}">{{company}}</option>
                 {% endfor %}
             </select>
         </div>
     </div>
-</form>
+</form> -->
+
+<script type="text/javascript">
+    function filterUsingCompany(selectedCompany) {
+      var id = 0;
+
+      if(selectedCompany !== 'All') {
+          document.querySelector(".applied-filter-list").innerHTML = `<div>${selectedCompany}</div>`;
+      } else {
+        document.querySelector(".applied-filter-list").innerHTML = "";
+      }
+
+      {% for post in site.posts %}
+        var companies = {{ post.companies | jsonify }}
+
+        if(!companies) {
+            companies = [];
+        }
+        var postDiv = document.getElementById(++id);
+        postDiv.style.display = (selectedCompany == 'All' || companies.includes(selectedCompany)) 
+        ? 'unset' 
+        : 'none';
+        
+      {% endfor %}
+    }
+  </script>
+  
+  <!-- <div>
+    <button id="All" onclick="filterUsingCategory('All')">*Show All Posts*</button>
+    {% assign companies = site.data.companies | sort %}
+    {% for company in companies %}
+      <button id="{{ company }}" onclick="filterUsingCategory(this.id)">{{ company }}</button>
+    {% endfor %}
+    <hr />
+  </div> -->
+
+<div class="selected_company"></div>
 
 <section class="recent-posts">
 
     <div class="section-title">
 
-        <h2><span>All Stories ({{site.posts.size}})</span></h2>
+        <h2>
+            <span>All Stories ({{site.posts.size}})</span>
+            <span class="applied-filter-list"></span>
+        </h2>
 
     </div>
 
     <div class="row listrecent">
+        <div class="col-3">
+            Filter by:
+            <div class="side-menu sticky-top sticky-top-80 fix-ht">
+                <ul class="interview-sticky-menu company-filter">
+                    <h5>Companies</h5>
+                    <li>
+                        <a href="#" id="All" onclick="filterUsingCompany('All')">*Show All Posts*</a>
+                        {% for company in companies %}
+                            <a href="#" id="{{ company }}" onclick="filterUsingCompany(this.id)">{{company}}</a>
+                        {% endfor %}
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-9">
+            <!-- {% assign sorted-posts = paginator.posts | where: "companies", "Nagarro"%} -->
+            {% for post in paginator.posts %}
 
-        {% for post in paginator.posts %}
+            {% include postbox.html %}
 
-        {% include postbox.html %}
-
-        {% endfor %}
+            {% endfor %}
+        </div>
+        
 
     </div>
 
@@ -54,6 +102,7 @@ title: Home
 <div class="bottompagination">
     <div class="pointerup"><i class="fa fa-caret-up"></i></div>
     <span class="navigation" role="navigation">
-        {% include pagination.html %}
-    </span>
+    {% include pagination.html %}
+</span>
 </div>
+

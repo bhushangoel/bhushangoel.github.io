@@ -275,7 +275,47 @@
     }
 
     obj.method(length, 2);
-    
+
+- title: What will be the output here?
+  hints: [JS, this, execution context, arguments]
+  company: []
+  type: js
+  solution:
+  code: |
+    (function(a){
+      return (function(){
+        console.log(a);
+        a = 23;
+      })()
+    })(45);
+
+- title: What will be the value of `this` inside the following functions?
+  hints: [JS, this, execution context]
+  company: []
+  type: js
+  solution:
+  code: |
+    const a = function(){
+      console.log(this);
+
+      const b = {
+        func1: function(){
+          console.log(this);
+        }
+      }
+
+      const c = {
+        func2: ()=>{
+          console.log(this);
+        }
+      }
+
+      b.func1();
+      c.func2();
+    }
+
+    a();
+
 # css
 - title: Which of these selectors will get higher priority?
   hints: [CSS Specificity]
