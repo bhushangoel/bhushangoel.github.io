@@ -18,7 +18,8 @@
     },
     {
         "title": "...(Rest paremeter and Spread operator)",
-        "link": "spread-rest-operator/"
+        "link": "spread-rest-operator/",
+        "youtube": "https://www.youtube.com/watch?v=jmJGsfk9ZeU"
     },
     {
         "title": "Web workers"

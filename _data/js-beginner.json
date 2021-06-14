@@ -1,10 +1,10 @@
 [
     {
-        "title": "What is a Closure?",
+        "title": "What is a <code>Closure</code>?",
         "link": "closures/"
     },
     {
-        "title": "Object.create()",
+        "title": "What is <code>Object.create()</code>",
         "link": "object-create/",
         "youtube": "https://youtu.be/l8H8A2HlnsQ"
     },
@@ -57,5 +57,9 @@
         "title": "<code>var</code> vs <code>let</code> vs <code>const</code>",
         "link": "var-let-const/",
         "youtube": "https://youtu.be/Be69eCvAWsU"
+    },
+    {
+        "title": "What is <code>this</code>?",
+        "link": "this/"
     }
 ]
