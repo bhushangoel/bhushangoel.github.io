@@ -9,6 +9,7 @@ description: "Object.create() is a way to create a new object. It uses an existi
 featured: true
 comments: false
 image: assets/images/js.png
+youtube: "https://www.youtube.com/watch?v=l8H8A2HlnsQ"
 ---
 
 `Object.create()` is one of the 4 techniques to create a new object in JS.

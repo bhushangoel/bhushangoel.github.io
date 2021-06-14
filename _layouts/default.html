@@ -80,7 +80,7 @@
                         <!--                    <a class="nav-link" href="{{ site.baseurl }}/index.html">Home</a>-->
                     </li>
 
-                    {% if page.url == "/" or page.url contains "categories" %}
+                    <!-- {% if page.url == "/" or page.url contains "categories" %}
                     <li class="nav-item dropdown active">
                         {% else %}
                     <li class="nav-item dropdown">
@@ -95,7 +95,7 @@
                                 category[0] }} ({{ category[1].size }})</a>
                             {% endfor %}
                         </div>
-                    </li>
+                    </li> -->
 
                     {% if page.url == "/interview-questions" %}
                     <li class="nav-item active">
@@ -201,27 +201,27 @@
             <div class="d-md-flex h-100">
                 <div class="col-md-4 transpdark align-self-center text-center h-100">
                     <div class="d-md-flex align-items-center justify-content-center h-100">
-                        <h2 class="d-md-block align-self-center py-1 font-weight-light">Tags <span
+                        <h2 class="d-md-block align-self-center py-1 font-weight-light">Categories<span
                                 class="d-none d-md-inline">→</span></h2>
                     </div>
                 </div>
 
                 <div class="col-md-8 p-5 align-self-center text-center">
-                    {% assign tags_list = site.tags %}
-                    {% if tags_list.first[0] == null %}
-                    {% for tag in tags_list %}
+                    {% assign category_list = site.categories %}
+                    {% if category_list.first[0] == null %}
+                    {% for category in category_list %}
                     <a class="mt-1 mb-1"
-                        href="{{site.baseurl}}/categories#{{ tag | url_escape | strip | replace: ' ', '-' }}">{{
-                        tag | camelcase }} ({{ site.tags[tag].size }})</a>
+                        href="{{site.baseurl}}/categories#{{ category | url_escape | strip | replace: ' ', '-' }}">{{
+                            category | camelcase }} ({{ site.categories[category].size }})</a>
                     {% endfor %}
                     {% else %}
-                    {% for tag in tags_list %}
+                    {% for category in category_list %}
                     <a class="mt-1 mb-1"
-                        href="{{site.baseurl}}/categories#{{ tag[0] | url_escape | strip | replace: ' ', '-' }}">{{
-                        tag[0] | camelcase }} ({{ tag[1].size }})</a>
+                        href="{{site.baseurl}}/categories#{{ category[0] | url_escape | strip | replace: ' ', '-' }}">{{
+                            category[0] | camelcase }} ({{ category[1].size }})</a>
                     {% endfor %}
                     {% endif %}
-                    {% assign tags_list = nil %}
+                    {% assign category_list = nil %}
                 </div>
             </div>
         </div>
@@ -268,6 +268,8 @@
         crossorigin="anonymous"></script>
 
     <script src="{{ site.baseurl }}/assets/js/mediumish.js"></script>
+
+    <!-- <script src="{{ site.baseurl }}/assets/js/filter.js"></script> -->
 
     {% if site.lazyimages == "enabled" %}
     <script src="{{ site.baseurl }}/assets/js/lazyload.js"></script>
