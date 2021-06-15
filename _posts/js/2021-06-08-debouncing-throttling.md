@@ -3,8 +3,9 @@ layout: post
 title:  "The Difference Between Throttling and Debouncing"
 author: Bhushan Goel
 categories: [ Javascript ]
-tags: [ Walmart ]
-description: "two techniques to limit the rate of calling a function"
+tags: [ ]
+companies: [ Walmart ]
+description: "Two techniques to limit the rate of calling a function"
 comments: false
 draft: true
 ---
@@ -56,6 +57,35 @@ Can be used in a situation where we need to hit an API on the basis of what user
 *For example:*
 
 Suppose, there is a kid continously asking for a chocolate to his parents. They can throttle his request by saying that we will give you one chocolate after every 30 min.
+
+```html
+<input placeholder="Enter some text" name="name"/>
+<p id="values"></p>
+```
+
+```js
+const input = document.querySelector('input');
+const log = document.getElementById('values');
+var timer;
+
+input.addEventListener('input', () => {
+  throttle(saveInput);
+});
+
+function throttle(func, timeout = 3000) {
+  if (timer) {
+    return;
+  }
+  timer = setTimeout(() => {
+    func.apply(this);
+    timer = undefined;
+  }, timeout);
+}
+
+function saveInput() {
+  console.log('Saving data');
+}
+```
 
 ### Use
 If on window resize event we want to call some API, so instead of doing it on every resize event, we can limit the rate to once in every 100ms

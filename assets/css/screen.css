@@ -1035,3 +1035,11 @@ a.footer-linkedin {
     border: 1px solid;
     padding: 4px;
 }
+
+a.post-img {
+    color: #6c757d
+}
+
+a.post-img img {
+    width: 33%
+}

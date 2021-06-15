@@ -51,5 +51,8 @@
     },
     {
         "title": "<code>Symbols</code> in Javascript"
+    },
+    {
+        "title": "What is the difference between <code>scope</code> and <code>execution context</code>?"
     }
 ]
