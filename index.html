@@ -32,7 +32,7 @@ title: Home
       }
 
       {% for post in site.posts %}
-        var companies = {{ post.companies | jsonify }}
+        var companies = {{ post.companies | jsonify }};
 
         if(!companies) {
             companies = [];
