@@ -318,7 +318,7 @@
 
 - title: Can we compare two objects in JS?
   hints: [JS, equality]
-  type:
+  type: js
   solution: 
   code: |
     let a = [1,2];
