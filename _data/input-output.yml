@@ -316,6 +316,26 @@
 
     a();
 
+- title: Can we compare two objects in JS?
+  hints: [JS, equality]
+  type:
+  solution: 
+  code: |
+    let a = [1,2];
+    let b = [1,2];
+    console.log(a == b);  // ?
+    console.log(a === b); // ?
+
+    let obj1 = {name: 'ctfi'};
+    let obj2 = {name: 'ctfi'};
+    console.log(obj1 == obj2);  // ?
+    console.log(obj1 === obj2); // ?
+
+    let str1 = new String("ctfi");
+    let str2 = new String("ctfi");
+    console.log(str1 == str2);  // ?
+    console.log(str1 === str2); // ?
+
 # css
 - title: Which of these selectors will get higher priority?
   hints: [CSS Specificity]
@@ -336,7 +356,6 @@
     p {
       color: blue
     }
-
 
 
 # - title: 
