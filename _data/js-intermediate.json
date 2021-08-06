@@ -54,5 +54,11 @@
     },
     {
         "title": "What is the difference between <code>scope</code> and <code>execution context</code>?"
+    },
+    {
+        "title": "How can we set expiry date for <code>Session storage</code> and <code>Local storage</code>?"
+    },
+    {
+        "title": "In which scenarios we should not use an arrow function?"
     }
 ]

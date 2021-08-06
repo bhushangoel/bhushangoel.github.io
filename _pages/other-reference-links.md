@@ -64,6 +64,22 @@ comments: false
                     </span>
                 </div>
             </li>
+            <li class="interview-list">
+                <div class="row">
+                    <span class="col-8">Complete intro to react</span>
+                    <span class="col-4">
+                        <a class="badge bg-primary-site rounded-pill" href="https://btholt.github.io/complete-intro-to-react-v6/" target="_blank">Read</a>
+                    </span>
+                </div>
+            </li>
+            <li class="interview-list">
+                <div class="row">
+                    <span class="col-8">Freecodecamp frontend library course</span>
+                    <span class="col-4">
+                        <a class="badge bg-primary-site rounded-pill" href="https://www.freecodecamp.org/learn/front-end-libraries/" target="_blank">Read/Learn</a>
+                    </span>
+                </div>
+            </li>
         </ol>
     </div>
 </div>

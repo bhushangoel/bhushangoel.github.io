@@ -38,5 +38,9 @@
     {
         "title": "TypeScript",
         "link": "#ts"
+    },
+    {
+        "title": "ReactJS",
+        "link": "#react"
     }
 ]

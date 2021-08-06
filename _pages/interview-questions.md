@@ -68,6 +68,9 @@ comments: false
         <h2 id="ts"> TypeScript</h2>
         {% include ts/typescript.html %}
         <hr>
+        <h2 id="react"> React JS</h2>
+        {% include react/react.html %}
+        <hr>
     </div>
 </div>
 
