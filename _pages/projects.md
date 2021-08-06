@@ -41,4 +41,14 @@ comments: false
       </div>
     </div>
   </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Random quote generator</h5>
+        <p class="card-text">Random quote generator project based on react.js. Solution to the  <a href="https://www.freecodecamp.org/learn/front-end-libraries/front-end-libraries-projects/build-a-random-quote-machine"> freecodecamp challenge</a>
+        </p>
+        <a href="https://crackingthefrontendinterview.com/quote-generator/" target="_blank" class="btn btn-primary">Visit Link</a>
+      </div>
+    </div>
+  </div>
 </div>
