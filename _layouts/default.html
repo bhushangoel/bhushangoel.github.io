@@ -20,8 +20,11 @@
 
     <script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>
 
-    <script data-ad-client="ca-pub-5737734766150378" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script data-ad-client="ca-pub-5737734766150378" async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
+    <script
+        id="mcjs">!function (c, h, i, m, p) { m = c.createElement(h), p = c.getElementsByTagName(h)[0], m.async = 1, m.src = i, p.parentNode.insertBefore(m, p) }(document, "script", "https://chimpstatic.com/mcjs-connected/js/users/368c45342af8455ec9402c7bf/1307f12ec41b66cdcbc1488ea.js");</script>
 </head>
 
 {% if jekyll.environment == 'production' %}
@@ -82,22 +85,8 @@
                         <!--                    <a class="nav-link" href="{{ site.baseurl }}/index.html">Home</a>-->
                     </li>
 
-                    <!-- {% if page.url == "/" or page.url contains "categories" %}
-                    <li class="nav-item dropdown active">
-                        {% else %}
-                    <li class="nav-item dropdown">
-                        {% endif %}
-                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
-                            aria-haspopup="true" aria-expanded="false">Blogs</a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="{{ site.baseurl }}/index.html">All Blogs</a>
-                            {% for category in site.categories %}
-                            <a class="dropdown-item"
-                                href="{{site.baseurl}}/categories#{{ category[0] | url_escape | strip | replace: ' ', '-' }}">{{
-                                category[0] }} ({{ category[1].size }})</a>
-                            {% endfor %}
-                        </div>
-                    </li> -->
+
+
 
                     {% if page.url == "/interview-questions" %}
                     <li class="nav-item active">
@@ -123,6 +112,20 @@
                             target="_blank">Youtube channel</a>
                     </li>
 
+
+                    <!-- <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                            aria-haspopup="true" aria-expanded="false">Donate</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="">
+                                <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_HhsOrAAENJKrAg" async> </script> </form>
+                            </a>
+                            <a class="dropdown-item" href="">
+                                <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_HhsKiLLJEMtvBg" async> </script> </form>
+                            </a>
+                        </div>
+                    </li>  -->
+
                     {% if page.url == "/other-reference-links" %}
                     <li class="nav-item dropdown active">
                         {% else %}
@@ -131,10 +134,11 @@
                         <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
                             aria-haspopup="true" aria-expanded="false">More</a>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="https://forms.gle/tYMAow9k4fymzfq26" target="_blank">Contribute questions</a>
+                            <a class="dropdown-item" href="https://forms.gle/tYMAow9k4fymzfq26"
+                                target="_blank">Contribute questions</a>
                             <a class="dropdown-item" href="{{ site.baseurl }}/other-reference-links">Other reference
                                 links</a>
-                            
+
                             <a class="dropdown-item"
                                 href="https://join.slack.com/t/crackingthefr-a7q3001/shared_invite/zt-q1w81ehe-B9edtZmVbXI_k2QBW1Ki6A"
                                 target="_blank">Join Slack</a>
@@ -142,6 +146,14 @@
                     </li>
 
 
+                    <li class="nav-item">
+                        <a class="nav-link" href="">
+                            <form>
+                                <script src="https://checkout.razorpay.com/v1/payment-button.js"
+                                    data-payment_button_id="pl_HhsOrAAENJKrAg" async> </script>
+                            </form>
+                        </a>
+                    </li>
                     {% include search-lunr.html %}
 
                 </ul>
@@ -214,13 +226,13 @@
                     {% for category in category_list %}
                     <a class="mt-1 mb-1"
                         href="{{site.baseurl}}/categories#{{ category | url_escape | strip | replace: ' ', '-' }}">{{
-                            category | camelcase }} ({{ site.categories[category].size }})</a>
+                        category | camelcase }} ({{ site.categories[category].size }})</a>
                     {% endfor %}
                     {% else %}
                     {% for category in category_list %}
                     <a class="mt-1 mb-1"
                         href="{{site.baseurl}}/categories#{{ category[0] | url_escape | strip | replace: ' ', '-' }}">{{
-                            category[0] | camelcase }} ({{ category[1].size }})</a>
+                        category[0] | camelcase }} ({{ category[1].size }})</a>
                     {% endfor %}
                     {% endif %}
                     {% assign category_list = nil %}
