@@ -208,14 +208,70 @@
         <!-- Categories Jumbotron
     ================================================== -->
         <div class="jumbotron fortags">
-            <div class="d-md-flex h-100">
-                <div class="col-md-4 transpdark align-self-center text-center h-100">
+            <div class="container pt-15">
+                <div class="d-md-flex h-100">
+                    <div class="col-md-3 h-100">
+                        <h5 class="d-md-block align-self-center py-1">Cracking the frontend interview</h5>
+                        <p>Frontend interview questions, project ideas, interview preparations, code samples, concept
+                            implementation and much more.</p>
+                        <ul class="footer-category-list">
+                            <li>
+                                <a class="mt-1 mb-1"
+                                    href="mailto:crackingthefrontendinterview@gmail.com">crackingthefrontendinterview@gmail.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 h-100">
+                        <h5 class="d-md-block align-self-center py-1">Categories</h5>
+                        <ul class="footer-category-list">
+                            {% assign category_list = site.categories %}
+                            {% for category in category_list %}
+                            <li>
+                                <a class="mt-1 mb-1"
+                                    href="{{site.baseurl}}/categories#{{ category[0] | url_escape | strip | replace: ' ', '-' }}">{{
+                                    category[0] | camelcase }} ({{ category[1].size }})</a>
+                            </li>
+
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    <div class="col-md-3 h-100">
+                        <h5 class="d-md-block align-self-center py-1">Quick Links</h5>
+                        <ul class="footer-category-list">
+                            <li>
+                                <form>
+                                    <script src="https://checkout.razorpay.com/v1/payment-button.js"
+                                        data-payment_button_id="pl_HhsOrAAENJKrAg" async> </script>
+                                </form>
+                            </li>
+                            <li>
+                                <a class="mt-1 mb-1"
+                                    href="{{site.baseurl}}/input-output-interview-questions">Input/Output questions</a>
+                            </li>
+                            <li>
+                                <a class="mt-1 mb-1" href="{{site.baseurl}}/other-reference-links">Curated frontend resources</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 h-100">
+                        <h5 class="d-md-block align-self-center py-1">Connect with us</h5>
+                        <ul class="footer-category-list">
+                            <li>
+                                <a class="mt-1 mb-1" href="https://forms.gle/tYMAow9k4fymzfq26" target="_blank">Contribute questions</a>
+                            </li>
+                            <li>
+                                <a class="mt-1 mb-1" href="https://forms.gle/Kz9NwVsjxtNP31Sy6" target="_blank">Feedback or Testimonial</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- <div class="col-md-4 align-self-center text-center h-100">
                     <div class="d-md-flex align-items-center justify-content-center h-100">
                         <h2 class="d-md-block align-self-center py-1 font-weight-light">Categories<span
                                 class="d-none d-md-inline">→</span></h2>
                     </div>
                 </div>
-
+    
                 <div class="col-md-8 p-5 align-self-center text-center">
                     {% assign category_list = site.categories %}
                     {% if category_list.first[0] == null %}
@@ -232,9 +288,11 @@
                     {% endfor %}
                     {% endif %}
                     {% assign category_list = nil %}
+                </div> -->
                 </div>
             </div>
         </div>
+
 
         <!-- Begin Footer
     ================================================== -->
@@ -242,7 +300,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 col-sm-6 text-center text-lg-left">
-                        No Copyright © {{ site.time | date: "%Y" }} | Feel free to copy anything | {{ site.name }}
+                        Copyright © {{ site.time | date: "%Y" }} | {{ site.name }}
                     </div>
                     <div class="col-md-6 col-sm-6 text-center text-lg-right footer-social-icons">
                         <a target="_blank" class="footer-linkedin" href="https://www.linkedin.com/in/bhushangoel/">
