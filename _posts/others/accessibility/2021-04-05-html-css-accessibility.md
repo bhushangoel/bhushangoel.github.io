@@ -4,6 +4,7 @@ title:  "HTML CSS Accessibility"
 author: Bhushan Goel
 categories: [ HTML ]
 tags: [ Accessibility ]
+companies: [Publicis Sapient, Go-jek]
 description: "Accessibility refers to web content, and a UI (user interface) that can be understood, navigated, and interacted with by a broad audience."
 featured: false
 image: assets/images/html.png

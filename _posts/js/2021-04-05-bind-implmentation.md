@@ -4,6 +4,7 @@ title:  "bind () implementation"
 author: Bhushan Goel
 categories: [ Javascript ]
 tags: [ Code Implementation ]
+companies: [Nagarro]
 image: assets/images/js.png
 description: "`bind()` is use to invoke a function in JS"
 featured: true

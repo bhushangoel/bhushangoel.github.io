@@ -1022,9 +1022,14 @@ a.footer-linkedin {
 .company-filter li a {
     background: #00ab6b;
     color: #fff;
-    padding: 2px;
+    padding: 3px;
     border-radius: 5px;
-    font-size: 14px;
+    font-size: 12px;
+    margin: 1px;
+}
+
+.company-filter li a:hover {
+    background-color: #00774b;
 }
 
 .applied-filter-list {

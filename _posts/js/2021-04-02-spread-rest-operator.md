@@ -3,7 +3,7 @@ layout: post
 title:  "Spread and Rest operator"
 author: Bhushan Goel
 categories: [ Javascript ]
-companies: [Nagarro]
+companies: [Nagarro, Walmart, Publicis Sapient]
 tags: [ ES6 ]
 description: "Spread and Rest operators are new operators added in ES6 version. "
 featured: false

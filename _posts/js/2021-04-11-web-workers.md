@@ -4,6 +4,7 @@ title:  "Web workers"
 author: Bhushan Goel 
 categories: [ Javascript ]
 tags: [ Web workers, PWA ]
+companies: [Publicis Sapient, Go-jek]
 description: "Spread operator is a new operator added in ES6 version. It takes an iterable (array or string) and expands
 it into individual elements."
 featured: false 
