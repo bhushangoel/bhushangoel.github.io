@@ -21,32 +21,33 @@ title: Home
     </div>
 </form> -->
 
-<script type="text/javascript">
+<!-- <script type="text/javascript">
     function filterUsingCompany(selectedCompany) {
-      var id = 0;
+        var id = 0;
 
-      if(selectedCompany !== 'All') {
-          document.querySelector(".applied-filter-list").innerHTML = `<div>${selectedCompany}</div>`;
-      } else {
-        document.querySelector(".applied-filter-list").innerHTML = "";
-      }
-
-      {% for post in site.posts %}
-        var companies = {{ post.companies | jsonify }};
-
-        if(!companies) {
-            companies = [];
+        if (selectedCompany !== 'All') {
+            document.querySelector(".applied-filter-list").innerHTML = `<div>${selectedCompany}</div>`;
+        } else {
+            document.querySelector(".applied-filter-list").innerHTML = "";
         }
-        var postDiv = document.getElementById(++id);
-        postDiv.style.display = (selectedCompany == 'All' || companies.includes(selectedCompany)) 
-        ? 'unset' 
-        : 'none';
-        
-      {% endfor %}
+
+        {% for post in site.posts %}
+        var companies = {{ post.companies | jsonify
+    }};
+
+    if (!companies) {
+        companies = [];
     }
-  </script>
-  
-  <!-- <div>
+    var postDiv = document.getElementById(++id);
+    postDiv.style.display = (selectedCompany == 'All' || companies.includes(selectedCompany))
+        ? 'unset'
+        : 'none';
+
+    {% endfor %}
+    }
+</script> -->
+
+<!-- <div>
     <button id="All" onclick="filterUsingCategory('All')">*Show All Posts*</button>
     {% assign companies = site.data.companies | sort %}
     {% for company in companies %}
@@ -62,13 +63,20 @@ title: Home
     <div class="section-title">
 
         <h2>
-            <span>All Stories ({{site.posts.size}})</span>
+            <span>All Stories</span>
             <span class="applied-filter-list"></span>
         </h2>
 
     </div>
 
-    <div class="row listrecent">
+    <div class="row">
+        <iframe class="airtable-embed"
+            src="https://airtable.com/embed/shrC14wuorQnDVeGo?backgroundColor=teal&viewControls=on" frameborder="0"
+            onmousewheel="" width="100%" height="533"
+            style="background: transparent; border: 1px solid #00ab6b;"></iframe>
+    </div>
+
+    <!-- <div class="row listrecent">
         <div class="col-3">
             Filter by:
             <div class="side-menu sticky-top sticky-top-80 fix-ht">
@@ -84,8 +92,8 @@ title: Home
             </div>
         </div>
         <div class="col-9">
-            <!-- {% assign sorted-posts = paginator.posts | where: "companies", "Nagarro"%} -->
-            {% for post in paginator.posts %}
+             {% assign sorted-posts = paginator.posts | where: "companies", "Nagarro"%}
+     {% for post in paginator.posts %}
 
             {% include postbox.html %}
 
@@ -93,16 +101,15 @@ title: Home
         </div>
         
 
-    </div>
+    </div> -->
 
 </section>
 
 <!-- Pagination
 ================================================== -->
-<div class="bottompagination">
+<!-- <div class="bottompagination">
     <div class="pointerup"><i class="fa fa-caret-up"></i></div>
     <span class="navigation" role="navigation">
-    {% include pagination.html %}
-</span>
-</div>
-
+        {% include pagination.html %}
+    </span>
+</div> -->

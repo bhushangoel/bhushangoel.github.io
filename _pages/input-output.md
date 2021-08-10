@@ -7,9 +7,11 @@ comments: false
 
 This page consists of all the **Input/Output** related questions based on various topics related to **frontend**.
 
-Click on the **question title** to see the code and solution.
+Click on the **question column** and expand to see the details and solution.
 
-{% for data in site.data.input-output %}
+<iframe class="airtable-embed" src="https://airtable.com/embed/shrnbvFiEUcJZl5NX?backgroundColor=cyan&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
+
+<!-- {% for data in site.data.input-output %}
 <details id="{{forloop.index}}" markdown="1">
 <summary><b>Question {{forloop.index}}: </b>{{data.title}}
 {% if data.company.size > 1 %}
@@ -54,7 +56,7 @@ Click on the **question title** to see the code and solution.
 </div>
 
 </details>
-{% endfor %}
+{% endfor %} -->
 
 
 
