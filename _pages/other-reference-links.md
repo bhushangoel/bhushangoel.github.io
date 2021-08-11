@@ -6,8 +6,9 @@ comments: false
 ---
 
 <div class="row justify-content-between">
-    <div class="col-md-8 pr-5">
-        <ol>
+    <div class="col-md-12 pr-5">
+    <iframe class="airtable-embed" src="https://airtable.com/embed/shrZniS3X3IFdTCJt?backgroundColor=green&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
+        <!-- <ol>
             <li class="interview-list">
                 <div class="row">
                     <span class="col-8">Advance JS ($)</span>
@@ -80,6 +81,14 @@ comments: false
                     </span>
                 </div>
             </li>
-        </ol>
+            <li class="interview-list">
+                <div class="row">
+                    <span class="col-8">HTML periodic table</span>
+                    <span class="col-4">
+                        <a class="badge bg-primary-site rounded-pill" href="https://projects.paul-george.me/html_periodic_table/" target="_blank">Refer</a>
+                    </span>
+                </div>
+            </li>
+        </ol> -->
     </div>
 </div>
