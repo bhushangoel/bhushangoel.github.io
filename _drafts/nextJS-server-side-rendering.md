@@ -32,6 +32,19 @@ import('./myApp.css');
 
 > This file only rendered during server side rendering.
 
+## _app.js
+It just acts as a wrapper around the app.
+
+```javascript
+render() {
+  return (
+    <Container>
+      <Component {...props}/>
+    </Container>
+  )
+}
+```
+
 ## **Some common issues**
 **`1. Text content did not match or Server and Client`**
 
