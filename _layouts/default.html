@@ -79,21 +79,25 @@
                         {% else %}
                     <li class="nav-item">
                         {% endif %}
-                        <!--                    <a class="nav-link" href="{{ site.baseurl }}/index.html">Home</a>-->
                     </li>
 
 
+                    <!-- {% if page.url == "/blogs" %}
+                    <li class="nav-item active">
+                        {% else %}
+                    <li class="nav-item">
+                        {% endif %}
+                        <a class="nav-link" href="{{ site.baseurl }}/interview-questions">All Blogs</a>
+                    </li> -->
 
-
-                    {% if page.url == "/interview-questions" %}
+                    <!-- {% if page.url == "/interview-questions" %}
                     <li class="nav-item active">
                         {% else %}
                     <li class="nav-item">
                         {% endif %}
                         <a class="nav-link" href="{{ site.baseurl }}/interview-questions">Interview Questions</a>
-                    </li>
+                    </li> -->
 
-                    <!--                https://docs.google.com/forms/d/e/1FAIpQLSf904kJ18vk_5Gk4jUAAKwQHhYjWYe2uhSVEMCCmcqqYB5pyA/viewform?usp=sf_link-->
 
                     {% if page.url == "/projects" %}
                     <li class="nav-item active">
@@ -141,14 +145,14 @@
                     </li>
 
 
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link" href="">
                             <form>
                                 <script src="https://checkout.razorpay.com/v1/payment-button.js"
                                     data-payment_button_id="pl_HhsOrAAENJKrAg" async> </script>
                             </form>
                         </a>
-                    </li>
+                    </li> -->
                     {% include search-lunr.html %}
 
                 </ul>

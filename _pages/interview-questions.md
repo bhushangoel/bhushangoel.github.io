@@ -1,7 +1,7 @@
 ---
 layout: page 
 title: Interview Questions 
-permalink: /interview-questions 
+permalink: /
 comments: false
 ---
 <div class="row justify-content-between">
