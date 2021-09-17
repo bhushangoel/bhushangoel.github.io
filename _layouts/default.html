@@ -97,7 +97,13 @@
                         {% endif %}
                         <a class="nav-link" href="{{ site.baseurl }}/interview-questions">Interview Questions</a>
                     </li> -->
-
+                    {% if page.url == "/problem-solving" %}
+                    <li class="nav-item active">
+                        {% else %}
+                    <li class="nav-item">
+                        {% endif %}
+                        <a class="nav-link" href="{{ site.baseurl }}/problem-solving">Problem Solving</a>
+                    </li>
 
                     {% if page.url == "/projects" %}
                     <li class="nav-item active">
