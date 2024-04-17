@@ -23,7 +23,7 @@ comments: false
         <p class="card-text">With JSON mock generator you can save your time by generating mock data that can be used for 
                 development purpose.
                 You can generate array or objects and use them wherever needed.</p>
-        <a href="json-playground.web.app" target="_blank" class="btn btn-primary">Visit Site</a>
+        <a href="https://json-playground.web.app" target="_blank" class="btn btn-primary">Visit Site</a>
       </div>
     </div>
   </div>
