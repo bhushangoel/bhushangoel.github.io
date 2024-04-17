@@ -11,8 +11,8 @@ comments: false
       <div class="card-body">
         <h5 class="card-title">Web workers demo</h5>
         <p class="card-text">See web workers in action.</p>
-        <a href="http://bhushangoel.me/webworker-demo-1/" target="_blank" class="btn btn-primary">Visit Site</a>
-        <a href="http://bhushangoel.me/webworker-demo-1/" target="_blank" class="btn btn-primary">Read More</a>
+        <a href="https://bhushangoel.github.io/webworker-demo-1/" target="_blank" class="btn btn-primary">Visit Site</a>
+        <a href="https://bhushangoel.github.io/webworker-demo-1/" target="_blank" class="btn btn-primary">Read More</a>
       </div>
     </div>
   </div>
@@ -24,20 +24,6 @@ comments: false
                 development purpose.
                 You can generate array or objects and use them wherever needed.</p>
         <a href="https://jsononlineviewer.com/" target="_blank" class="btn btn-primary">Visit Site</a>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-6">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Mock REST API/DB</h5>
-        <p class="card-text">With Mock REST API/DB service, you can save your time by using this service directly as a REST API.
-        </p>
-        <p>
-        You can fetch many types of dummy data like: posts, categories, products, users etc.
-        It is using <a href="https://www.npmjs.com/package/json-server">JSON SERVER</a> npm package.
-        </p>
-        <a href="https://mock-data-db.herokuapp.com/" target="_blank" class="btn btn-primary">Visit Link</a>
       </div>
     </div>
   </div>
