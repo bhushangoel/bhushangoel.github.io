@@ -42,5 +42,9 @@
     {
         "title": "ReactJS",
         "link": "#react"
+    },
+    {
+        "title": "Redux",
+        "link": "#redux"
     }
 ]
