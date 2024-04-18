@@ -71,6 +71,9 @@ comments: false
         <h2 id="react"> React JS</h2>
         {% include react/react.html %}
         <hr>
+        <h2 id="redux"> Redux</h2>
+        {% include redux/redux.html %}
+        <hr>
     </div>
 </div>
 
