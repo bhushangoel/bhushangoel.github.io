@@ -10,5 +10,13 @@
     },
     {
         "title": "<code>never</code> vs <code>any</code>"
+    },
+    {
+        "title": "Basics of typescript",
+        "link": "ts-basics/"
+    },
+    {
+        "title": "Basics of typescript 2024",
+        "link": "ts-basics-2024/"
     }
 ]
